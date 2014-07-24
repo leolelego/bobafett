@@ -1,42 +1,15 @@
 ---
-layout: default
+layout: bobafett
 ---
 
 
-<!-- Menu -->
-
-<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
-
-  <div id="cv-menu" ><!--data-spy="affix" data-offset-top="0"-->
-
-    <a class="cv-menu-photo profile_photo fast-anim" href="http://www.osxbricks.com" target="_blank"></a>
-
-    <h1 class="cv-menu-title">{{ site.name }}</h1>
-    <ul class="cv-menu-social">    
-      <li><a  href="mailto:contact@leoderbois.com"><i class="fa fa-envelope-square"></i></a></li>
-      <li class="linkedin-color"> <a href="http://fr.linkedin.com/in/leoderbois" target="_blank"><i class="fa fa-linkedin-square" target="_blank"></i></a></li>
-      <li class="github-color"><a href="https://github.com/leoderbois" target="_blank"><i class="fa fa-github-square" ></i></a></li>
-      <li class="twitter-color"><a href="http://www.twitter.com/leoderbois" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-    </ul>
-    <div class="cv-menu-description">{{ site.userDescription }}</div>
-    <ul class="cv-menu-nav fast-anim">
-      <li><a href="#experiences">Experiences</a></li>
-      <li><a href="#projets"> Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#educations">Education</a></li>
-      <li><a href="#hobbies">Hobbies</a></li>
-      <li><a href="#informations" class="scrollTo">Informations</a></li>
-    </ul>
-  </div> 
-  <div class="cv-menu-background-image" ></div>
-
-</div>
 <!-- content -->
-<div id="experiences" class="col-md-9 col-lg-9 col-sm-9 col-xs-12  cv-content" >
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cv-content-quote " ><i class="fa fa-quote-left"></i>  Fascinated by computers since I was 14 years, and especially by the Apple's world, I am improving and I share my knowledge on a daily basis while working on innovative projects in Aquafadas and making my own technology watch to improve my personal projects. <i class="fa fa-quote-right"></i></div>
+<div  id="content" class="col-md-9 col-lg-9 col-sm-9 col-xs-12" >
 
-  <h2 ><i class="fa fa-code"></i> Experiences</h2>
-  <div class="cv-content-posts cv-content-line">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content-quote " ><i class="fa fa-quote-left"></i> {{ site.quote }}<i class="fa fa-quote-right"></i></div>
+
+  <h2 id="experiences"><i class="fa fa-code"></i> Experiences</h2>
+  <div class="content-posts content-line">
       {% for post in site.categories.experiences %}
       <li>
         <div class="post-title  col-lg-8 col-md-12 col-sm-12 col-xs-12 "><i class="fa fa-chevron-right"></i> {{ post.title }} at {{ post.company }}  </div>
@@ -52,7 +25,7 @@ layout: default
   </div>
 
   <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="projets"><i class="fa fa-wrench"></i>  Personal projects</h2>
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" class="cv-content-posts cv-content-line">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" class="content-posts content-line">
         {% for post in site.categories.projects %}
           <li>
       <span class="post-title"><i class="fa fa-chevron-right"></i> {{ post.title }}</span>
@@ -63,7 +36,7 @@ layout: default
   </div>
 
   <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="skills"><i class="fa fa-database"></i> Skills</h2>
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 skills_section cv-content-posts cv-content-line">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 skills_section content-posts content-line">
     <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Languages</h3>
     <div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
       <h4><i class="fa fa-wrench"></i> Compiled</h4>
@@ -132,7 +105,7 @@ layout: default
   </div>
 
   <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="educations"><i class="fa fa-university"></i> Education</h2>
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" class="cv-content-posts cv-content-line">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" class="content-posts content-line">
      {% for post in site.categories.educations %}
       <li>
         <div class="post-title  col-lg-8 col-md-12 col-sm-12 col-xs-12 "><i class="fa fa-chevron-right"></i> {{ post.title }} at {{ post.school }}  </div>
@@ -149,8 +122,8 @@ layout: default
 
   </div>
   <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="hobbies"><i class="fa fa-coffee"></i> Hobbies</h2>
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cv-content-posts 
-cv-content-list">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content-posts 
+content-list">
     <ul class="col-lg-4 col-md-6 col-lg-6 col-sm-12 col-xs-12 ">
       <li><i class="fa fa-dot-circle-o"></i> Technology watch</li>
       <li><i class="fa fa-dot-circle-o"></i> Improve and write articles for <a href="http://www.osxbricks.com">OSXBricks.com</a></li>
@@ -167,8 +140,8 @@ cv-content-list">
 
   <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="informations"><i class="fa fa-info"></i> Informations</h2>
 
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cv-content-posts  
-cv-content-list">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content-posts  
+content-list">
     <ul class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
       <li><a href="mailto:contact@leoderbois.com"><i class="fa fa-paper-plane"></i> contact[at]leoderbois.com</a></li>
       <li><a href="http://www.osxbricks.com"><i class="fa fa-globe"></i> osxbricks.com</a></li>
@@ -179,7 +152,7 @@ cv-content-list">
       <li><a href="http://www.github.com/leoderbois"><i class="fa fa-github"></i> leoderbois</a></li>
       <li><a href="http://www.twitter.com/leoderbois"><i class="fa fa-twitter"></i>@leoderbois</a></li>
     </ul>
-    <ul class="col-lg-4 col-md-12  col-sm-12 col-xs-12 cv-content-contact-minor">
+    <ul class="col-lg-4 col-md-12  col-sm-12 col-xs-12 content-contact-minor">
       <li><i class="fa fa-car"></i> car and motorcycle licences (+ vehicules)</li>
       <li><i class="fa fa-child"></i> Diploma for youth leaders and workers (BAFA in french)</li>
       <li><i class="fa fa-language"></i> Languages 
@@ -193,6 +166,6 @@ cv-content-list">
     
   </div>
   <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-    <a class="cv-content-download-button " href=""><i class="fa fa-file"></i> Download PDF version</a></div>
+    <a class="content-download-button " href=""><i class="fa fa-file"></i> Download PDF version</a>
+    </div>
   </div>
-  <!-- Footer -->

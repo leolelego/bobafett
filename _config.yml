@@ -1,17 +1,28 @@
 # Site settings
-title: Resume Of Boba Fett
-email: contact@leoderbois.com
-description: "Developer analyst specialized </br>in OSX & iOS"
+title: Boba Fett's resume
+email: boba@deathstar.gal
+description: 
 baseurl: "/Boba-Fett-Theme-For-Jekyll"
 url: "http://www.leoderbois.com/Boba-Fett-Theme-For-Jekyll/"
-#Personnal INforamtions
 
-userName: Boba Fett
-userDescription: killer intergalactic
-otherSiteURL:  http://www.leoderbois.com
-otherSiteName : Boba Fett At School
-twitter_username: bobafett
-github_username:  bobafett
+#Personnal INforamtions
+name: Boba Fett
+summary: Intergalactic Hit Man 
+quote: I was born to kill people. My father give all is own experience to be the best hitman existing in all galaxy
+
+avatar: /assets/bobafett.jpg
+panel_background: /assets/slave_one.png
+
+blog_name : Boba Fett At School
+blog_url:  http://www.osxbricks.com
+
+linkedin: bobafett
+google: bobafett
+github:  bobafett
+twitter: bobafett
+facebook: bobafett
+
+resume_pdf: http://link.com/cv.pdf
 
 # Build settings
 markdown: kramdown
