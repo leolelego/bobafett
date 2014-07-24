@@ -1,0 +1,198 @@
+---
+layout: default
+---
+
+
+<!-- Menu -->
+
+<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+
+  <div id="cv-menu" ><!--data-spy="affix" data-offset-top="0"-->
+
+    <a class="cv-menu-photo profile_photo fast-anim" href="http://www.osxbricks.com" target="_blank"></a>
+
+    <h1 class="cv-menu-title">{{ site.name }}</h1>
+    <ul class="cv-menu-social">    
+      <li><a  href="mailto:contact@leoderbois.com"><i class="fa fa-envelope-square"></i></a></li>
+      <li class="linkedin-color"> <a href="http://fr.linkedin.com/in/leoderbois" target="_blank"><i class="fa fa-linkedin-square" target="_blank"></i></a></li>
+      <li class="github-color"><a href="https://github.com/leoderbois" target="_blank"><i class="fa fa-github-square" ></i></a></li>
+      <li class="twitter-color"><a href="http://www.twitter.com/leoderbois" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+    </ul>
+    <div class="cv-menu-description">{{ site.userDescription }}</div>
+    <ul class="cv-menu-nav fast-anim">
+      <li><a href="#experiences">Experiences</a></li>
+      <li><a href="#projets"> Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#educations">Education</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#informations" class="scrollTo">Informations</a></li>
+    </ul>
+  </div> 
+  <div class="cv-menu-background-image" ></div>
+
+</div>
+<!-- content -->
+<div id="experiences" class="col-md-9 col-lg-9 col-sm-9 col-xs-12  cv-content" >
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cv-content-quote " ><i class="fa fa-quote-left"></i>  Fascinated by computers since I was 14 years, and especially by the Apple's world, I am improving and I share my knowledge on a daily basis while working on innovative projects in Aquafadas and making my own technology watch to improve my personal projects. <i class="fa fa-quote-right"></i></div>
+
+  <h2 ><i class="fa fa-code"></i> Experiences</h2>
+  <div class="cv-content-posts cv-content-line">
+      {% for post in site.categories.experiences %}
+      <li>
+        <div class="post-title  col-lg-8 col-md-12 col-sm-12 col-xs-12 "><i class="fa fa-chevron-right"></i> {{ post.title }} at {{ post.company }}  </div>
+
+        <time class="col-lg-4 col-md-12 col-sm-12 col-xs-12"> {{ post.entrydate }} <span class="italique">to</span> {{ post.outdate }} {% if post.time %} ({{ post.time }}){% endif %}</time>
+       <city class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> {% if post.city %} <i class="fa fa-map-marker" ></i> {{ post.city }}{% endif %}</city>
+
+
+        <div class="post-content col-md-12 col-lg-12 col-sm-12 col-xs-12">{{ post.content }}</div>
+
+         </li>
+        {% endfor %}
+  </div>
+
+  <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="projets"><i class="fa fa-wrench"></i>  Personal projects</h2>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" class="cv-content-posts cv-content-line">
+        {% for post in site.categories.projects %}
+          <li>
+      <span class="post-title"><i class="fa fa-chevron-right"></i> {{ post.title }}</span>
+      <div class="post-content">{{ post.content }}</div>
+
+          </li>
+        {% endfor %}
+  </div>
+
+  <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="skills"><i class="fa fa-database"></i> Skills</h2>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 skills_section cv-content-posts cv-content-line">
+    <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Languages</h3>
+    <div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
+      <h4><i class="fa fa-wrench"></i> Compiled</h4>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <h4><i class="fa fa-terminal"></i> Scripted</h4>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+      <h4><i class="fa fa-globe"></i> Web And Database</h4>
+    </div>
+
+
+    <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Process</h3>
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <h4><i class="fa fa-tasks"></i> Project Management</h4>
+      <ul>
+        <li>AGILE Method (SCRUM)</li>
+        <li>Git</li>
+        <li>Subversion </li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <h4><i class="fa fa-cubes"></i> Methodologies</h4>
+      <ul>
+        <li>AGILE Method (SCRUM)</li>
+        <li>Git</li>
+        <li>Subversion </li>
+      </ul>
+    </div>
+
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+      <h4><i class="fa fa-terminal"></i> Network Administration</h4>
+      <ul>
+        <li>AGILE Method (SCRUM)</li>
+        <li>Git</li>
+        <li>Subversion </li>
+      </ul>
+    </div>
+
+    <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Tools</h3>
+    <div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
+      <h4><i class="fa fa-desktop"></i> Plateform/Opertaing System</h4>
+      <ul>
+        <li><i class="fa fa-apple"></i> OS X</li>
+        <li><i class="fa fa-mobile"></i> iOS (iPhone/iPad)</li>
+        <li><i class="fa fa-linux"></i> Linux (Debian,Ubuntu,Centos)</li>
+        <li><i class="fa fa-android"></i> Android</li>
+        <li><i class="fa fa-windows"></i> Windows (XP to 8)</li>
+      </ul>
+
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <h4><i class="fa fa-code"></i>  IDE</h4>
+      <ul>
+        <li>Xcode</li>
+        <li>Eclipse </li>
+        <li>Sublime Text</li>
+        <li>Vi</li>
+        <li>Qt Creator / Designer</li>
+        <li>Espresso and Coda</li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+
+    </div>
+  </div>
+
+  <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="educations"><i class="fa fa-university"></i> Education</h2>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" class="cv-content-posts cv-content-line">
+     {% for post in site.categories.educations %}
+      <li>
+        <div class="post-title  col-lg-8 col-md-12 col-sm-12 col-xs-12 "><i class="fa fa-chevron-right"></i> {{ post.title }} at {{ post.school }}  </div>
+
+        <time class="col-lg-4 col-md-12 col-sm-12 col-xs-12"> {{ post.schoolyear }}</time>
+        <city class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> {% if post.city %} <i class="fa fa-map-marker" ></i> {{ post.city }}{% endif %}</city>
+
+
+        <div class="post-content col-md-12 col-lg-12 col-sm-12 col-xs-12">{{ post.content }}</div>
+
+      </li>
+    {% endfor %}
+
+
+  </div>
+  <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="hobbies"><i class="fa fa-coffee"></i> Hobbies</h2>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cv-content-posts 
+cv-content-list">
+    <ul class="col-lg-4 col-md-6 col-lg-6 col-sm-12 col-xs-12 ">
+      <li><i class="fa fa-dot-circle-o"></i> Technology watch</li>
+      <li><i class="fa fa-dot-circle-o"></i> Improve and write articles for <a href="http://www.osxbricks.com">OSXBricks.com</a></li>
+      <li><i class="fa fa-dot-circle-o"></i> Create tools for Mac (little apps, <a href="http://www.osxbricks.com/category/alfred/">Alfred Workflow</a>) </li>
+    </ul>
+    <ul class="col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+      <li><i class="fa fa-dot-circle-o"></i> Motorcycles : drive and mecanics</li>
+      <li><i class="fa fa-dot-circle-o"></i> Nature : stroll and discover places</li>
+    </ul>
+    <ul class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ">
+      <li><i class="fa fa-dot-circle-o"></i> Music : play drums for 15 years</li>
+    </ul>
+  </div>
+
+  <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="informations"><i class="fa fa-info"></i> Informations</h2>
+
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cv-content-posts  
+cv-content-list">
+    <ul class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <li><a href="mailto:contact@leoderbois.com"><i class="fa fa-paper-plane"></i> contact[at]leoderbois.com</a></li>
+      <li><a href="http://www.osxbricks.com"><i class="fa fa-globe"></i> osxbricks.com</a></li>
+      <li><a href="http://www.github.com/leoderbois"><i class="fa fa-linkedin"></i> Léo Derbois</a></li>
+    </ul>
+    
+    <ul  class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
+      <li><a href="http://www.github.com/leoderbois"><i class="fa fa-github"></i> leoderbois</a></li>
+      <li><a href="http://www.twitter.com/leoderbois"><i class="fa fa-twitter"></i>@leoderbois</a></li>
+    </ul>
+    <ul class="col-lg-4 col-md-12  col-sm-12 col-xs-12 cv-content-contact-minor">
+      <li><i class="fa fa-car"></i> car and motorcycle licences (+ vehicules)</li>
+      <li><i class="fa fa-child"></i> Diploma for youth leaders and workers (BAFA in french)</li>
+      <li><i class="fa fa-language"></i> Languages 
+        <ul>
+          <li>English : professionnal <img  class="flag flag-gb"/></li>
+          <li>French : native language <img  class="flag flag-fr"/></li>
+          <li>Spanish : bases <img  class="flag flag-es"/></li>
+        </ul>
+      </li>
+    </ul>
+    
+  </div>
+  <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+    <a class="cv-content-download-button " href=""><i class="fa fa-file"></i> Download PDF version</a></div>
+  </div>
+  <!-- Footer -->

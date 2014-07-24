@@ -1,0 +1,20 @@
+# Site settings
+title: Resume Of Boba Fett
+email: contact@leoderbois.com
+description: "Developer analyst specialized </br>in OSX & iOS"
+baseurl: "/Boba-Fett-Theme-For-Jekyll"
+url: "http://www.leoderbois.com/Boba-Fett-Theme-For-Jekyll/"
+#Personnal INforamtions
+
+userName: Boba Fett
+userDescription: killer intergalactic
+otherSiteURL:  http://www.leoderbois.com
+otherSiteName : Boba Fett At School
+twitter_username: bobafett
+github_username:  bobafett
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#plugin
