@@ -4,15 +4,30 @@
   {% include head.html %}
 
     <body>
+      <!-- Left/top panel -->
       {% include panel.html %}
-      {% include content/header.html %}
-      {% include content/experiences.html %}
-      {% include content/projects.html %}
-      {% include content/skills.html %}
-      {% include content/educations.html %}
-      {% include content/hobbies.html %}
-      {% include content/informations.html %}
-      {% include content/footer.html %}
+       <!-- top of content -->
+      {% include content/1-header.html %}
+
+      <!-- Include Section if one article minumum exist -->
+      {% if site.categories.experiences %}
+        {% include content/2-experiences.html %}
+      {% endif %}
+      {% if site.categories.projects %}
+        {% include content/3-projects.html %}
+      {% endif %}
+      {% if site.categories.skills %}
+        {% include content/4-skills.html %}
+      {% endif %}
+      {% if site.categories.educations %}
+        {% include content/5-educations.html %}
+      {% endif %}
+      {% if site.categories.hobbies %}
+        {% include content/6-hobbies.html %}
+      {% endif %} 
+       <!-- inforamtions section + bottom of content -->
+      {% include content/7-informations.html %}
+      {% include content/8-footer.html %}
       
     </body>
 
