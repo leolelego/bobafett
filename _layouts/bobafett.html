@@ -4,9 +4,16 @@
   {% include head.html %}
 
     <body>
-      <!-- Left/top panel -->
+      {% if site.enable_ribbon %}
+        {% include ribbon.html %}
+      {% endif %}
+        <!-- Left/top panel -->
+      
       {% include panel.html %}
+
+
        <!-- top of content -->
+
       {% include content/1-header.html %}
 
       <!-- Include Section if one article minumum exist -->

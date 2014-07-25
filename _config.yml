@@ -9,7 +9,13 @@ url: "http://www.leoderbois.com/Boba-Fett-Theme-For-Jekyll/"
 name: Boba Fett
 summary: Intergalactic Hit Man 
 quote: I was born to kill people. My father give all is own experience to be the best hitman existing in all galaxy
+phone: +33 06 71 82 84 56
 
+street: 45 street Wookies
+city: Death Star
+zipcode: 45002
+
+favicon: /assets/bobafett.ico
 avatar: /assets/bobafett.jpg
 panel_background: /assets/slave_one.png
 
@@ -22,8 +28,20 @@ github:  bobafett
 twitter: bobafett
 facebook: bobafett
 
+informations-custom:
+- text: Space ship drive Licence + vehicle
+  logo: space-shuttle
+- text: Cooking Wookie stuff
+  logo: spoon
+- text: Have a lot of guns
+
+
+
+# [[text: "Space ship drive Licence + vehicle",logo: "fa-space-shuttle"],[text: "Space ship drive Licence + vehicle",logo: "fa-spoon"]] # Go to Font-awesome website to get logo
+speaking-langugages: ["Mandalorian (native)","Huttese (professionnal)","Wookie (bases)"]
 resume_pdf: http://link.com/cv.pdf
 
+enable_ribbon: yes #remove this line to remove the ribbon
 # Build settings
 markdown: kramdown
 permalink: pretty
