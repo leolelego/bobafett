@@ -1,33 +1,54 @@
 # Site settings
-title: Boba Fett's resume
-email: boba@deathstar.gal
+title      : Boba Fett's resume
+email      : boba@deathstar.gal
 description: 
-baseurl: "/Boba-Fett-Theme-For-Jekyll"
-url: "http://www.leoderbois.com/Boba-Fett-Theme-For-Jekyll/"
+baseurl    : "/Boba-Fett-Theme-For-Jekyll"
+url        : "http://www.leoderbois.com/Boba-Fett-Theme-For-Jekyll/"
 
-#Personnal INforamtions
-name: Boba Fett
+############################# Personnal Inforamtions ################################
+
+name   : Boba Fett
 summary: Intergalactic Hit Man 
-quote: I was born to kill people. My father give all is own experience to be the best hitman existing in all galaxy
-phone: +33 06 71 82 84 56
+quote  : I was born to kill people. My father give all is own experience to be the best hitman existing in all galaxy
+phone  : +33 06 71 82 84 56
 
-street: 45 street Wookies
-city: Death Star
-zipcode: 45002
+# Where you leave ?
+street : 45 Wookies street
+city   : Death Star			
+zipcode: 45002				
 
-favicon: /assets/bobafett.ico
-avatar: /assets/bobafett.jpg
-panel_background: /assets/slave_one.png
 
-blog_name : Boba Fett At School
-blog_url:  http://www.osxbricks.com
+# if you have a site or a custom blog
+blog_name: Boba Fett At School
+blog_url : http://www.osxbricks.com
 
-linkedin: bobafett
-google: bobafett
-github:  bobafett
-twitter: bobafett
-facebook: bobafett
+linkedin: bobafett # linkedin username
+google  : bobafett # google username
+github  : bobafett # github username
+twitter : bobafett # twitter username
+facebook: bobafett # facebook username
 
+
+############################# Site Options ################################
+favicon         : /assets/bobafett.ico 		# Favicon website
+avatar          : /assets/bobafett.jpg 		# Avatar/photo 
+panel_background: /assets/slave_one.png 	# panel background images
+enable_ribbon   : yes 						# remove this line to remove the ribbon
+
+
+############################ Resume Content ################################
+# Hobbies
+hobbies: ["Pod Racer Competition", "Computer Sciences","Women","Cooking for friends"]
+
+
+# Kills
+skills:
+- name: Guns Used
+  values: ["Blasters","Heavy ranged","Melee"]
+- name: Guns Used
+  values: ["Blasters","Heavy ranged","Melee"]
+
+# Inforamtions
 informations-custom:
 - text: Space ship drive Licence + vehicle
   logo: space-shuttle
@@ -35,15 +56,16 @@ informations-custom:
   logo: spoon
 - text: Have a lot of guns
 
-
-
-# [[text: "Space ship drive Licence + vehicle",logo: "fa-space-shuttle"],[text: "Space ship drive Licence + vehicle",logo: "fa-spoon"]] # Go to Font-awesome website to get logo
 speaking-langugages: ["Mandalorian (native)","Huttese (professionnal)","Wookie (bases)"]
+
+# PDF
 resume_pdf: http://link.com/cv.pdf
 
-enable_ribbon: yes #remove this line to remove the ribbon
-# Build settings
+
+############################# Build setting (don't touch!) ################################
 markdown: kramdown
 permalink: pretty
 
-#plugin
+############################# Plugins ################################
+
+# RAS

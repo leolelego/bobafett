@@ -217,77 +217,56 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/_posts\/2013-02-04-Desktop-App-Developper-Internship.md": {
+	"\/_posts\/1-experiences\/2013-02-04-template-experiences.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/2013-02-04-Desktop-App-Developper-Internship.md",
-		"outputAbbreviatedPath": "\/_posts\/2013-02-04-Desktop-App-Developper-Internship.html",
+		"inputAbbreviatedPath": "\/_posts\/1-experiences\/2013-02-04-template-experiences.md",
+		"outputAbbreviatedPath": "\/_posts\/1-experiences\/2013-02-04-template-experiences.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_posts\/2013-07-01-Desktop-App-Developper-at-Aquafadas.md": {
+	"\/_posts\/2-projects\/2013-02-04-template-projects.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/2013-07-01-Desktop-App-Developper-at-Aquafadas.md",
-		"outputAbbreviatedPath": "\/_posts\/2013-07-01-Desktop-App-Developper-at-Aquafadas.html",
+		"inputAbbreviatedPath": "\/_posts\/2-projects\/2013-02-04-template-projects.md",
+		"outputAbbreviatedPath": "\/_posts\/2-projects\/2013-02-04-template-projects.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_posts\/2014-01-01-killerschool.md": {
+	"\/_posts\/4-educations\/2013-02-04-template-educations.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/2014-01-01-killerschool.md",
-		"outputAbbreviatedPath": "\/_posts\/2014-01-01-killerschool.html",
+		"inputAbbreviatedPath": "\/_posts\/4-educations\/2013-02-04-template-educations.md",
+		"outputAbbreviatedPath": "\/_posts\/4-educations\/2013-02-04-template-educations.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_posts\/2014-01-01-osxbricks.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/2014-01-01-osxbricks.md",
-		"outputAbbreviatedPath": "\/_posts\/2014-01-01-osxbricks.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/educations\/2014\/01\/01\/killerschool\/index.html": {
+	"\/_site\/educations\/2013\/02\/04\/template-experiences\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/educations\/2014\/01\/01\/killerschool\/index.html",
+		"inputAbbreviatedPath": "\/_site\/educations\/2013\/02\/04\/template-experiences\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/experiences\/2013\/02\/04\/Desktop-App-Developper-Internship\/index.html": {
+	"\/_site\/experiences\/2013\/02\/04\/template-educations\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/experiences\/2013\/02\/04\/Desktop-App-Developper-Internship\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/experiences\/2013\/07\/01\/Desktop-App-Developper-at-Aquafadas\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/experiences\/2013\/07\/01\/Desktop-App-Developper-at-Aquafadas\/index.html",
+		"inputAbbreviatedPath": "\/_site\/experiences\/2013\/02\/04\/template-educations\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -301,11 +280,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/projects\/2014\/01\/01\/osxbricks\/index.html": {
+	"\/_site\/projects\/2014\/01\/01\/template-projects\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/projects\/2014\/01\/01\/osxbricks\/index.html",
+		"inputAbbreviatedPath": "\/_site\/projects\/2014\/01\/01\/template-projects\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
