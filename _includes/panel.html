@@ -21,9 +21,9 @@
     <ul class="panel-nav">
       {% if site.categories.experiences %}<li><a href="#experiences">Experiences</a></li>{% endif %}
       {% if site.categories.projects %}<li><a href="#projects"> Projects</a></li>{% endif %}
-      {% if site.categories.skills %}<li><a href="#skills">Skills</a></li>{% endif %}
+      {% if site.categories.skills or site.skills %}<li><a href="#skills">Skills</a></li>{% endif %}
       {% if site.categories.educations %}<li><a href="#educations">Education</a></li>{% endif %}
-      {% if site.categories.hobbies %}<li><a href="#hobbies">Hobbies</a></li>{% endif %}
+      {% if site.categories.hobbies or site.hobbies %}<li><a href="#hobbies">Hobbies</a></li>{% endif %}
       <li><a href="#informations" class="scrollTo">Informations</a></li>
     </ul>
   </div> 

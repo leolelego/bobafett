@@ -9,6 +9,7 @@
 /* ######## CONTENT ######### */
 /* --> Colors */
 /* --> sizes */
+/* Post font size where is type is list (like hobbies, skills or informations)*/
 /* ######## FOOTER ######### */
 /* ####### GENERAL ####### */
 html {
@@ -174,31 +175,24 @@ ul.panel-nav {
   padding: 40px;
 }
 h2 {
+  font-size: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-style: bold;
   border-bottom: 1px solid #e5e5e5;
 }
-.skills_section {
+.content-skills {
+  margin: 1px;
   text-align: center;
+}
+.content-skills ul,
+.content-skills li {
+  padding: 0 !important;
   list-style: none;
 }
-.skills_section h3 {
-  margin: 10px;
+.content-skills h4 {
+  text-transform: uppercase;
   text-decoration: underline;
-  text-transform: uppercase;
-}
-.skills_section h4 {
-  padding-right: 25px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.skills_section ul,
-.skills_section li {
-  list-style-type: none;
-  list-style-position: inside;
-  margin: 0;
-  padding: 0;
 }
 .content-posts {
   padding: 30px;
@@ -230,6 +224,7 @@ h2 {
 .content-list ul li {
   list-style-type: none;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 .content-list ul li i {
   color: black;

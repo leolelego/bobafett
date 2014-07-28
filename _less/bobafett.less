@@ -170,7 +170,7 @@ text-decoration: none;
 	width: 100%;
 	text-align: justify;
 	font-weight: 300;
-	font-size: 16px;
+	font-size: @content-quote-font-size;
 	color: @content-quote-color;
 	padding : 40px;
 
@@ -178,6 +178,7 @@ text-decoration: none;
 }
 
 h2{
+	font-size: @content-section-title-size;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-style: bold;
@@ -185,28 +186,20 @@ h2{
 
 }
 
-.skills_section {
+.content-skills {
+	margin:1px;
 	text-align: center;
+}
+.content-skills ul,.content-skills li{
+    padding:0 !important;
 	list-style: none;
 }
-.skills_section h3{
-	margin : 10px;
-	text-decoration: underline;
-
-      text-transform: uppercase;
-}
-.skills_section h4{
-	padding-right: 25px;
+.content-skills h4{
 	text-transform: uppercase;
-	font-weight:bold;
+	text-decoration: underline;
 }
 
-.skills_section  ul,.skills_section li { 
-	list-style-type: none;
-    list-style-position:inside;
-    margin:0;
-    padding:0; 
- }
+
 
 .content-posts{
 	padding: 30px;
@@ -220,7 +213,7 @@ h2{
 	padding: 20px;
 }
 .post-title{
-	font-size: 22px;
+	font-size: @content-post-title-font-size;
 
 }
 
@@ -241,6 +234,7 @@ h2{
 .content-list ul li{
 	list-style-type: none;
 	margin-bottom: 10px;
+	font-size:@content-post-typelist-font-size;
 }
 .content-list ul li i{
 	color: black;

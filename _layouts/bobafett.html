@@ -23,13 +23,13 @@
       {% if site.categories.projects %}
         {% include content/3-projects.html %}
       {% endif %}
-      {% if site.categories.skills %}
+      {% if site.categories.skills or site.skills %}
         {% include content/4-skills.html %}
       {% endif %}
       {% if site.categories.educations %}
         {% include content/5-educations.html %}
       {% endif %}
-      {% if site.categories.hobbies %}
+      {% if site.categories.hobbies or site.hobbies %}
         {% include content/6-hobbies.html %}
       {% endif %} 
        <!-- inforamtions section + bottom of content -->

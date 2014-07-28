@@ -38,10 +38,12 @@ enable_ribbon   : yes 						# remove this line to remove the ribbon
 
 ############################ Resume Content ################################
 # Hobbies
+#if you remove this, articles with 'hobbies' category are considerated
 hobbies: ["Pod Racer Competition", "Computer Sciences","Women","Cooking for friends"]
 
 
 # Kills
+#if you remove this, articles with 'skills' category are considerated
 skills:
 - name: Guns Used
   values: ["Blasters","Heavy ranged","Melee"]
