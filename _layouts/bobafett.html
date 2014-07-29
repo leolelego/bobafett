@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-    <body>
+    <body  data-spy="scroll" data-target="#navbar">
       {% if site.enable_ribbon %}
         {% include ribbon.html %}
       {% endif %}
@@ -37,7 +37,6 @@
       {% include content/8-footer.html %}
       
     </body>
-
 
    {% include footer.html %}
 </html>

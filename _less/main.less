@@ -1,19 +1,23 @@
 @import "bootstrapVariables.less";
-@import "theme.less";
-
-/* ####### GENERAL ####### */
-
+@import "bobafett.less";
+@import url(http://twitter.github.com/bootstrap/assets/css/bootstrap.css);
+/*#######################*/
+/*#       GENERAL       #*/
+/*#######################*/
 html {
-  	height: 100%;
-  	width: 100%;
-  	overflow: hidden;
+	height: 100%;
+	width: 100%;
+
+	overflow: hidden;
 }
 body {
 	background-color: @panel-filter-and-background-color;
 	font-family: @font-global;
-  	height: 100%;
-  	width: 100%;
-  	overflow: auto;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	position: relative;
+
 }
 body a{
 	color: @link-color;
@@ -24,7 +28,7 @@ body a:hover{
 }
 table{
 	margin-left:auto; 
-    margin-right:auto;
+	margin-right:auto;
 }
 td img, th img{
 	padding: 10px;
@@ -33,8 +37,6 @@ td img, th img{
 .colonne{
 	padding: 0;
 }
-
-
 .italique{
 	font-style : italic;
 }
@@ -42,9 +44,9 @@ td img, th img{
 	font-style: bold;
 }
 
-/*###### PANEL ######*/
-
-
+/*#######################*/
+/*#        PANEL        #*/
+/*#######################*/
 #panel{
 	color: @panel-text-color;
 	height: 100%;
@@ -52,11 +54,10 @@ td img, th img{
 	@media(min-width: @screen-sm-min){
 		position: fixed;
 		left: 0;
-  		right: 0;
+		right: 0;
 		width: 25%;
 	}
 }
-
 #panel a{
 	color: @panel-link-color;
 }
@@ -66,30 +67,25 @@ td img, th img{
 .panel-background-image {
 	height: 100%;
 	position: fixed;
-  	display: block;
+	display: block;
 	width: 25%;
-  	left: 0;
-  	right: 0;
-  	z-index: 1;
+	left: 0;
+	right: 0;
+	z-index: 1;
 	-webkit-filter: blur(@panel-bg-blur);
-  	-moz-filter: blur(@panel-bg-blur);
-  	-o-filter: blur(@panel-bg-blur);
-  	-ms-filter: blur(@panel-bg-blur);
-  	filter: blur(@panel-bg-blur);	
-  	opacity: @panel-bg-opacity;
-	@media(max-width: @screen-sm-min){
-		display: none;
-	}
+	-moz-filter: blur(@panel-bg-blur);
+	-o-filter: blur(@panel-bg-blur);
+	-ms-filter: blur(@panel-bg-blur);
+	filter: blur(@panel-bg-blur);	
+	opacity: @panel-bg-opacity;
+
 }
-
-
 .panel_avatar{
 	background-repeat: no-repeat;
 	background-size: @panel-avatar-size @panel-avatar-size;
 	height: @panel-avatar-size;
 	width:@panel-avatar-size;
 	margin-top: 50px;
-	/*margin-bottom: 60px;*/
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
@@ -97,7 +93,7 @@ td img, th img{
 	border-radius: 4px solid #e5e5e5;
 }
 a img.panel_avatar{
-		transition : all 600ms ;
+	transition : all 600ms ;
 	/*browser specific versions*/
 	-moz-transition : all 600ms ;
 	-ms-transition : all 600ms ;
@@ -111,8 +107,6 @@ a:hover img.panel_avatar{
 	-o-transform:  scale(1.1);
 	-ms-transform:  scale(1.1);
 }
-
-
 .panel-name{
 	text-align: center;
 	margin-top: 20px;
@@ -123,30 +117,27 @@ a:hover img.panel_avatar{
 	width: 100%;
 	text-align: center;
 	font-size: @panel-socialicon-size;
-
 }
 .panel-social li {
 	display: inline-block;
 	margin: 2.5px;
 	list-style: none;
 }
-
 .panel-summary{
 	text-align: center;
 	font-size: @panel-summary-size;
 	color :@panel-summary-color;
 	margin-bottom: 30px;
+}
+#navbar{
 
 }
-
-ul.panel-nav{
+#navbar ul{
 	margin-top: 20px;
 	text-align: right;
-	@media(max-width: @screen-sm-min){
-		display: none;
-	}
+
 }
-.panel-nav li{
+#navbar  ul li{
 	list-style-type: none;
 	margin-bottom: @panel-nav-text-marginbtm-size;
 	margin-top: 0px;
@@ -154,17 +145,42 @@ ul.panel-nav{
 	font-size: @panel-nav-text-size;
 	margin-right: 12px;
 }
-
-.panel-nav li:hover{
-text-decoration: none;
+#navbar li.active{
+	color:yellow;
+	border: 1px solid red;
+}
+#navbar ul li:hover{
+	text-decoration: none;
 	font-size: @panel-nav-text-size-hover;
 }
-
-/*####### Content #######*/
+#navbar .active a{
+	color: yellow;
+	background-color: green;
+} 
+/*#######################*/
+/*#       CONTENT       #*/
+/*#######################*/
 #content{
 	padding: 20px 10px 20px 60px;
 	color: @content-text-color;
 	background-color: @content-background-color;
+}
+#content a{
+	color : @content-link-color;
+}
+#content a:hover{
+	color : @content-link-color-hover;
+}
+#content h2{
+	font-size: @content-section-title-size;
+	padding-top: 10px;
+	color: @content-title-text-color;
+	padding-bottom: 10px;
+	font-style: bold;
+	border-bottom: 1px solid #e5e5e5;
+}
+#content h2 i{
+	color: @content-title-icon-color;
 }
 .content-quote{
 	width: 100%;
@@ -173,92 +189,77 @@ text-decoration: none;
 	font-size: @content-quote-font-size;
 	color: @content-quote-color;
 	padding : 40px;
-
-	
 }
-
-h2{
-	font-size: @content-section-title-size;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-style: bold;
-	border-bottom: 1px solid #e5e5e5;
-
+.content-posts i{
+	color: @content-post-icon-color;
 }
-
 .content-skills {
 	margin:1px;
 	text-align: center;
 }
 .content-skills ul,.content-skills li{
-    padding:0 !important;
+	padding:0 !important;
 	list-style: none;
 }
 .content-skills h4{
 	text-transform: uppercase;
 	text-decoration: underline;
 }
-
-
-
 .content-posts{
 	padding: 30px;
-	/*border-top: 1px solid #e5e5e5;*/
 	margin-bottom: 10px;
 	list-style-type: none;
 }
 .post-content{
-	font-size: 14px;
-	 
+	font-size: @content-post-text-size ;
 	padding: 20px;
 }
 .post-title{
 	font-size: @content-post-title-font-size;
+	color :@content-post-title-color;
 
 }
-
 .content-posts  time {
 	text-align: right;
-  	font-size: 15px;
-  	color: #818181;
-  	@media(max-width: 1200px){
+	font-size: @content-post-info-font-size;
+	color: @content-post-info-color;
+	@media(max-width: 1200px){
 		text-align: left;
 	}
 }
-
 .content-posts city{
-  	font-size: 15px;
-  	color: #818181;
+font-size: @content-post-info-font-size;
+color: @content-post-info-color;
 }
-
 .content-list ul li{
 	list-style-type: none;
 	margin-bottom: 10px;
 	font-size:@content-post-typelist-font-size;
 }
-.content-list ul li i{
-	color: black;
-}
-
 .content-contact-minor li {
 	color: #585858;
 	font-size: 14px;
-
-
 }
-.content-download-button{
+a.content-download-button{
 	margin-top      : 50px;
 	padding         : 10px;
 	width           : 300px;
 	display         : block;
 	margin-left     : auto;
 	margin-right    : auto;
-	background-color: black;
+	background-color: @content-pdf-button-color;
 	border-radius   : 5px;
 	text-align      : center;
+	font-size       : @content-pdf-text-size;
 
 }
-/* ##### footer ##### */
+a:hover.content-download-button{
+	background-color: @content-pdf-button-color-hover;
+}
+
+/*#######################*/
+/*#        FOOTER       #*/
+/*#######################*/
 footer{
 	text-align: center;
 	background-color: @footer-background-color;
@@ -270,8 +271,3 @@ footer a{
 footer a:hover{
 	color: @footer-link-hover-color;
 }
-
-
-
-
-

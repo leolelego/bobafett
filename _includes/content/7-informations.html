@@ -1,9 +1,10 @@
-  <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="informations"><i class="fa fa-info"></i> Informations</h2>
+  <section  id="informations">
+  <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><i class="fa fa-info"></i> Informations</h2>
 
   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content-posts  
 content-list">
 	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-	<h3>Contacts</h3>
+	<h4>Contacts</h4>
     <ul >
     	{%if site.email %}<li><a href="mailto:{{ site.email}}}"><i class="fa fa-paper-plane"></i>  {{ site.email }}</a></li>{% endif %}
     	{%if site.phone %}<li><a href="tel:{{ site.phone}}}"><i class="fa fa-phone"></i>  {{ site.phone }}</a></li>{% endif %}
@@ -17,7 +18,7 @@ content-list">
     </div>
     
     <div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
-    <h3>Social Networking</h3>
+    <h4>Social Networking</h4>
     <ul >
       {% if site.linkedin %}<li><a href="http://fr.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin" target="_blank"></i> {{site.name}}</a></li>{% endif %}
       {% if site.google %}<li><a href="https://plus.google.com/+{{site.google}}" target="_blank"><i class="fa fa-google-plus"></i> {{site.name}}</a></li>{% endif %}
@@ -29,7 +30,7 @@ content-list">
     
     {% if site.informations-custom and site.speaking-langugages %}
     <div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
-    <h3>Others</h3>
+    <h4>Others</h4>
     <ul>
       {% for custom in site.informations-custom %}
       	<li><i class="fa fa-{% if custom.logo %}{{ custom.logo }}{% else %}info{% endif %}"></i> {{ custom.text }}</li>
@@ -48,3 +49,4 @@ content-list">
     {% endif %}
     </div>
   </div>
+  </section>
