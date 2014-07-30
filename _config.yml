@@ -3,7 +3,7 @@ title      : Boba Fett's resume
 email      : boba@deathstar.gal
 description: 
 baseurl    : "/Boba-Fett-Theme-For-Jekyll"
-url        : "http://www.leoderbois.com/Boba-Fett-Theme-For-Jekyll/"
+url        : "http://leoderbois.github.io/Boba-Fett-Theme-For-Jekyll/"
 
 
 metadata: ["Leo Derbois","github","jekyll","jekyllrb","resume","CV","Boba Fett"]
@@ -32,9 +32,9 @@ facebook: bobafett # facebook username
 
 
 ############################# Site Options ################################
-favicon         : /assets/bobafett.ico 		# Favicon website
-avatar          : /assets/bobafett.jpg 		# Avatar/photo 
-panel_background: /assets/slave_one.png 	# panel background images
+favicon         : /assets/bobafett.ico 		# Favicon website / Need to be local (in assets forlder)
+avatar          : /assets/bobafett.jpg 		# Avatar/photo  / Need to be local (in assets forlder)
+panel_background: /assets/slave_one.png 	# panel background images / Need to be local (in assets folder)
 enable_ribbon   : yes 						# remove this line to remove the ribbon
 
 
