@@ -1,7 +1,7 @@
 Boba Fett Theme For Jekyll
 ==========================
 
-Boba Fett Theme For Jekyll is a theme for [Jekyll](http://jekyllrb.com) that makes your Resume such as Boba Fett's
+Boba Fett Theme is a theme/template for [Jekyll](http://jekyllrb.com) makes your CV such as Boba Fett
 
 ## How it works
 
