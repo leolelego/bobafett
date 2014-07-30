@@ -218,8 +218,6 @@
 		"strictUnits": 0
 		},
 	"\/_posts\/educations\/2013-02-04-template-educations.md": {
-<<<<<<< HEAD
-=======
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
@@ -231,42 +229,51 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_posts\/experiences\/2013-02-04-template-experiences.md": {
->>>>>>> FETCH_HEAD
+	"\/_posts\/experiences\/2013-02-02-Aurra.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-<<<<<<< HEAD
-		"inputAbbreviatedPath": "\/_posts\/educations\/2013-02-04-template-educations.md",
-		"outputAbbreviatedPath": "\/_posts\/educations\/2013-02-04-template-educations.html",
+		"inputAbbreviatedPath": "\/_posts\/experiences\/2013-02-02-Aurra.md",
+		"outputAbbreviatedPath": "\/_posts\/experiences\/2013-02-02-Aurra.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_posts\/experiences\/2013-02-03-Jabba.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_posts\/experiences\/2013-02-03-Jabba.md",
+		"outputAbbreviatedPath": "\/_posts\/experiences\/2013-02-03-Jabba.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/_posts\/experiences\/2013-02-04-template-experiences.md": {
-=======
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_posts\/experiences\/2013-02-04-template-experiences.md",
 		"outputAbbreviatedPath": "\/_posts\/experiences\/2013-02-04-template-experiences.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/_posts\/Hobbies\/2013-02-04-template-hobbies.md": {
->>>>>>> FETCH_HEAD
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-<<<<<<< HEAD
-		"inputAbbreviatedPath": "\/_posts\/experiences\/2013-02-04-template-experiences.md",
-		"outputAbbreviatedPath": "\/_posts\/experiences\/2013-02-04-template-experiences.html",
-=======
 		"inputAbbreviatedPath": "\/_posts\/Hobbies\/2013-02-04-template-hobbies.md",
 		"outputAbbreviatedPath": "\/_posts\/Hobbies\/2013-02-04-template-hobbies.html",
->>>>>>> FETCH_HEAD
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -275,7 +282,7 @@
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_posts\/projects\/2013-02-04-template-projects.md",
 		"outputAbbreviatedPath": "\/_posts\/projects\/2013-02-04-template-projects.html",
@@ -294,42 +301,38 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/assets\/bobafett.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 51601,
-		"inputAbbreviatedPath": "\/_site\/assets\/bobafett.jpg",
-		"outputAbbreviatedPath": "\/_site\/assets\/bobafett.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/assets\/slave_one.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 442520,
-		"inputAbbreviatedPath": "\/_site\/assets\/slave_one.png",
-		"outputAbbreviatedPath": "\/_site\/assets\/slave_one.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/educations\/2013\/02\/04\/template-experiences\/index.html": {
+	"\/_site\/educations\/2013\/02\/04\/template-educations\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/educations\/2013\/02\/04\/template-experiences\/index.html",
+		"inputAbbreviatedPath": "\/_site\/educations\/2013\/02\/04\/template-educations\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/experiences\/2013\/02\/04\/template-educations\/index.html": {
+	"\/_site\/experiences\/2013\/02\/01\/Aurra\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/experiences\/2013\/02\/04\/template-educations\/index.html",
+		"inputAbbreviatedPath": "\/_site\/experiences\/2013\/02\/01\/Aurra\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/experiences\/2013\/02\/02\/Jabba\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/experiences\/2013\/02\/02\/Jabba\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/experiences\/2013\/02\/04\/template-experiences\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/experiences\/2013\/02\/04\/template-experiences\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -358,18 +361,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_site\/projects\/2014\/01\/01\/template-projects\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/README.md",
-		"outputAbbreviatedPath": "\/_site\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -427,7 +418,7 @@
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/README.md",
 		"outputAbbreviatedPath": "\/README.html",
@@ -1004,7 +995,7 @@
 	"lessStrictImports": 0,
 	"lessStrictMath": 0,
 	"lessStrictUnits": 0,
-	"markdownAutoOutputPathEnabled": 1,
+	"markdownAutoOutputPathEnabled": 0,
 	"markdownAutoOutputPathFilenamePattern": "*.html",
 	"markdownAutoOutputPathRelativePath": "",
 	"markdownAutoOutputPathReplace1": "",
