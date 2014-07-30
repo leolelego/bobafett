@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-    <body>
+    <body  data-spy="scroll" data-target="#navbar">
       {% if site.enable_ribbon %}
         {% include ribbon.html %}
       {% endif %}
@@ -23,13 +23,13 @@
       {% if site.categories.projects %}
         {% include content/3-projects.html %}
       {% endif %}
-      {% if site.categories.skills %}
+      {% if site.categories.skills or site.skills %}
         {% include content/4-skills.html %}
       {% endif %}
       {% if site.categories.educations %}
         {% include content/5-educations.html %}
       {% endif %}
-      {% if site.categories.hobbies %}
+      {% if site.categories.hobbies or site.hobbies %}
         {% include content/6-hobbies.html %}
       {% endif %} 
        <!-- inforamtions section + bottom of content -->
@@ -37,7 +37,6 @@
       {% include content/8-footer.html %}
       
     </body>
-
 
    {% include footer.html %}
 </html>

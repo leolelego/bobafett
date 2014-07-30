@@ -18,15 +18,17 @@
       {% if site.facebook %}<li><a href="https://www.facebook.com/{{site.facebok}}" target="_blank"><i class="fa fa-facebook-square"></i></a></li>{% endif %}
     </ul>
     <div class="panel-summary">{{ site.summary }}</div>
-    <ul class="panel-nav">
-      {% if site.categories.experiences %}<li><a href="#experiences">Experiences</a></li>{% endif %}
-      {% if site.categories.projects %}<li><a href="#projects"> Projects</a></li>{% endif %}
-      {% if site.categories.skills %}<li><a href="#skills">Skills</a></li>{% endif %}
-      {% if site.categories.educations %}<li><a href="#educations">Education</a></li>{% endif %}
-      {% if site.categories.hobbies %}<li><a href="#hobbies">Hobbies</a></li>{% endif %}
-      <li><a href="#informations" class="scrollTo">Informations</a></li>
-    </ul>
+    <nav id="navbar" class="nav" role="navigation">
+      <ul  >
+        {% if site.categories.experiences %}<li ><a href="#experiences">Experiences</a></li>{% endif %}
+        {% if site.categories.projects %}<li><a href="#projects"> Projects</a></li>{% endif %}
+        {% if site.categories.skills or site.skills %}<li><a href="#skills">Skills</a></li>{% endif %}
+        {% if site.categories.educations %}<li><a href="#educations">Education</a></li>{% endif %}
+        {% if site.categories.hobbies or site.hobbies %}<li><a href="#hobbies">Hobbies</a></li>{% endif %}
+        <li><a href="#informations" class="scrollTo">Informations</a></li>
+      </ul>
+    </nav>
   </div> 
-  <img src="{{ site.panel_background }}" class="panel-background-image" ></img>
+  <img src="{{ site.panel_background }}" class="panel-background-image hidden-xs" ></img>
 
 </div>

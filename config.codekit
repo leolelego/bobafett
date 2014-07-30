@@ -143,7 +143,7 @@
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_less\/bobafett.less",
 		"outputAbbreviatedPath": "\/css\/bobafett.css",
@@ -197,16 +197,16 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/_less\/theme.less": {
+	"\/_less\/main.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_less\/theme.less",
-		"outputAbbreviatedPath": "\/css\/theme.css",
+		"inputAbbreviatedPath": "\/_less\/main.less",
+		"outputAbbreviatedPath": "\/css\/main.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -218,11 +218,13 @@
 		"strictUnits": 0
 		},
 	"\/_posts\/educations\/2013-02-04-template-educations.md": {
+<<<<<<< HEAD
+=======
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_posts\/educations\/2013-02-04-template-educations.md",
 		"outputAbbreviatedPath": "\/_posts\/educations\/2013-02-04-template-educations.html",
@@ -230,14 +232,41 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/_posts\/experiences\/2013-02-04-template-experiences.md": {
+>>>>>>> FETCH_HEAD
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
+<<<<<<< HEAD
+		"inputAbbreviatedPath": "\/_posts\/educations\/2013-02-04-template-educations.md",
+		"outputAbbreviatedPath": "\/_posts\/educations\/2013-02-04-template-educations.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_posts\/experiences\/2013-02-04-template-experiences.md": {
+=======
 		"inputAbbreviatedPath": "\/_posts\/experiences\/2013-02-04-template-experiences.md",
 		"outputAbbreviatedPath": "\/_posts\/experiences\/2013-02-04-template-experiences.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_posts\/Hobbies\/2013-02-04-template-hobbies.md": {
+>>>>>>> FETCH_HEAD
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+<<<<<<< HEAD
+		"inputAbbreviatedPath": "\/_posts\/experiences\/2013-02-04-template-experiences.md",
+		"outputAbbreviatedPath": "\/_posts\/experiences\/2013-02-04-template-experiences.html",
+=======
+		"inputAbbreviatedPath": "\/_posts\/Hobbies\/2013-02-04-template-hobbies.md",
+		"outputAbbreviatedPath": "\/_posts\/Hobbies\/2013-02-04-template-hobbies.html",
+>>>>>>> FETCH_HEAD
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -252,6 +281,40 @@
 		"outputAbbreviatedPath": "\/_posts\/projects\/2013-02-04-template-projects.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/_posts\/skills\/2013-02-04-template-skills.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_posts\/skills\/2013-02-04-template-skills.md",
+		"outputAbbreviatedPath": "\/_posts\/skills\/2013-02-04-template-skills.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/assets\/bobafett.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51601,
+		"inputAbbreviatedPath": "\/_site\/assets\/bobafett.jpg",
+		"outputAbbreviatedPath": "\/_site\/assets\/bobafett.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/assets\/slave_one.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 442520,
+		"inputAbbreviatedPath": "\/_site\/assets\/slave_one.png",
+		"outputAbbreviatedPath": "\/_site\/assets\/slave_one.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/_site\/educations\/2013\/02\/04\/template-experiences\/index.html": {
 		"fileType": 8192,
@@ -271,6 +334,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/hobbies\/2014\/01\/01\/template-hobbies\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/hobbies\/2014\/01\/01\/template-hobbies\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_site\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -285,6 +357,27 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_site\/projects\/2014\/01\/01\/template-projects\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/README.md",
+		"outputAbbreviatedPath": "\/_site\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/skills\/2014\/01\/01\/template-skills\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/skills\/2014\/01\/01\/template-skills\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -311,11 +404,11 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/css\/bobafett.css": {
+	"\/css\/main.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/bobafett.css",
+		"inputAbbreviatedPath": "\/css\/main.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
