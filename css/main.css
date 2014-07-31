@@ -80,10 +80,10 @@ th img {
   }
 }
 #panel a {
-  color: #73181e;
+  color: #dd8837;
 }
 #panel a:hover {
-  color: #f7a641;
+  color: #0c710f;
 }
 .panel-background-image {
   height: 100%;
@@ -101,6 +101,7 @@ th img {
   opacity: 0.5;
 }
 .panel_avatar {
+  background-color: transparent;
   background-repeat: no-repeat;
   background-size: 180px 180px;
   height: 180px;
@@ -113,6 +114,7 @@ th img {
   border-radius: 4px solid #e5e5e5;
 }
 a img.panel_avatar {
+  background-color: black;
   transition: all 600ms ;
   /*browser specific versions*/
   -moz-transition: all 600ms ;
@@ -146,20 +148,26 @@ a:hover img.panel_avatar {
 .panel-summary {
   text-align: center;
   font-size: 24px;
-  color: #dd8837;
+  color: #1d9722;
   margin-bottom: 30px;
+}
+@media (max-height: 992px) {
+  #navbar {
+    display: none;
+  }
 }
 #navbar ul {
   margin-top: 20px;
-  text-align: right;
+  text-align: center;
+  padding: 0 !important;
 }
 #navbar ul li {
   list-style-type: none;
   margin-bottom: 8px;
   margin-top: 0px;
   font-weight: 300;
-  font-size: 24px;
-  margin-right: 12px;
+  font-size: 35px;
+  padding: 0 !important;
 }
 #navbar li.active {
   color: yellow;
@@ -167,7 +175,7 @@ a:hover img.panel_avatar {
 }
 #navbar ul li:hover {
   text-decoration: none;
-  font-size: 26px;
+  font-size: 35px;
 }
 #navbar .active a {
   color: yellow;
@@ -193,24 +201,26 @@ a:hover img.panel_avatar {
   display: block;
 }
 #content h2 {
-  font-size: 30px;
-  padding-top: 10px;
-  color: #000000;
+  font: 'HelveticaNeue', 'Helvetica Neue ', Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  color: #a62a2c;
   padding-bottom: 10px;
   font-style: bold;
   border-bottom: 1px solid #e5e5e5;
 }
 #content h2 i {
-  color: #000000;
+  color: #a62a2c;
 }
 .content-quote {
   width: 100%;
   text-align: justify;
   font-weight: 300;
   font-size: 20px;
-  color: #333333;
   padding: 40px;
   font-style: italic;
+}
+.content-quote span {
+  color: #b12f34;
 }
 .content-posts i {
   color: #000000;
@@ -234,7 +244,7 @@ a:hover img.panel_avatar {
   list-style-type: none;
 }
 .post-content {
-  font-size: 14px;
+  font-size: 18px;
   padding: 20px;
 }
 .post-title {
@@ -272,12 +282,14 @@ a.content-download-button {
   margin-left: auto;
   margin-right: auto;
   background-color: #000000;
+  color: #ffffff !important;
   border-radius: 5px;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
+  font-style: bold !important;
 }
 a:hover.content-download-button {
-  background-color: #000000;
+  background-color: #f7a641;
 }
 /*#######################*/
 /*#        FOOTER       #*/
@@ -285,7 +297,7 @@ a:hover.content-download-button {
 footer {
   text-align: center;
   background-color: #000000;
-  color: #333333;
+  color: #808080;
 }
 footer a {
   color: #73181e;

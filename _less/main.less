@@ -81,6 +81,7 @@ td img, th img{
 
 }
 .panel_avatar{
+	background-color: transparent;
 	background-repeat: no-repeat;
 	background-size: @panel-avatar-size @panel-avatar-size;
 	height: @panel-avatar-size;
@@ -93,6 +94,7 @@ td img, th img{
 	border-radius: 4px solid #e5e5e5;
 }
 a img.panel_avatar{
+	background-color: black;
 	transition : all 600ms ;
 	/*browser specific versions*/
 	-moz-transition : all 600ms ;
@@ -117,6 +119,7 @@ a:hover img.panel_avatar{
 	width: 100%;
 	text-align: center;
 	font-size: @panel-socialicon-size;
+
 }
 .panel-social li {
 	display: inline-block;
@@ -130,11 +133,15 @@ a:hover img.panel_avatar{
 	margin-bottom: 30px;
 }
 #navbar{
-
+	@media(max-height: @screen-md-min ){
+		display:none;
+	}
 }
 #navbar ul{
 	margin-top: 20px;
-	text-align: right;
+	text-align: center;
+	padding:0 !important;
+
 
 }
 #navbar  ul li{
@@ -143,7 +150,7 @@ a:hover img.panel_avatar{
 	margin-top: 0px;
 	font-weight: 300;
 	font-size: @panel-nav-text-size;
-	margin-right: 12px;
+	padding:0 !important;
 }
 #navbar li.active{
 	color:yellow;
@@ -178,25 +185,28 @@ a:hover img.panel_avatar{
 	display: block;
 }
 #content h2{
+	font:@font-large ;
 	font-size: @content-section-title-size;
-	padding-top: 10px;
 	color: @content-title-text-color;
 	padding-bottom: 10px;
 	font-style: bold;
 	border-bottom: 1px solid #e5e5e5;
 }
 #content h2 i{
-	color: @content-title-icon-color;
+	color: @content-title-text-color;
 }
 .content-quote{
 	width: 100%;
 	text-align: justify;
 	font-weight: 300;
 	font-size: @content-quote-font-size;
-	color: @content-quote-color;
 	padding : 40px;
 		font-style : italic;
 
+
+}
+.content-quote span{
+	color: @content-quote-color;
 
 }
 .content-posts i{
@@ -228,6 +238,7 @@ a:hover img.panel_avatar{
 	font-size: @content-post-title-font-size;
 	color :@content-post-title-color;
 
+
 }
 .content-posts  time {
 	text-align: right;
@@ -258,9 +269,11 @@ a.content-download-button{
 	margin-left     : auto;
 	margin-right    : auto;
 	background-color: @content-pdf-button-color;
+	color 			: @content-pdf-text-color !important;
 	border-radius   : 5px;
 	text-align      : center;
 	font-size       : @content-pdf-text-size;
+	font-style	 	: bold !important;
 
 }
 a:hover.content-download-button{
