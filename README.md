@@ -44,6 +44,6 @@ There is 2 statics branches :
 
 ## License
 
-Open sourced under the [MIT license](https://raw.githubusercontent.com/leoderbois/Boba-Fett-Theme-For-Jekyll/master/LICENSE.md).
+Open sourced under the [MIT license](/LICENSE.md).
 
 
