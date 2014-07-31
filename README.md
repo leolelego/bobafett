@@ -40,7 +40,7 @@ There is 2 statics branches :
 - scroll animaton href# in nav (in JS) *need help*
 - min-height nav
 
-**[Contact me](mailto:contact@leoderbois.com) if you have ideas ! **
+**[Contact me](mailto:contact@leoderbois.com) if you have ideas !**
 
 ## License
 
