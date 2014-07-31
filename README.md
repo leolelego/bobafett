@@ -28,7 +28,13 @@ There is 2 statics branches :
 
 - Master for the *releases* version,
 - gh-pages for the [demo](http://bobafett.leoderbois.com) 
- 
+- (+) branches for fix and development
+
+This project use **Frameworks** : 
+
+-  [Boostrap](http://getbootstrap.com)
+-  [less](http://lesscss.org)
+-  [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
 
 ## Get it
 
