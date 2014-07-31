@@ -151,7 +151,7 @@ a:hover img.panel_avatar {
   color: #1d9722;
   margin-bottom: 30px;
 }
-@media (max-height: 992px) {
+@media (max-height: 800) {
   #navbar {
     display: none;
   }
