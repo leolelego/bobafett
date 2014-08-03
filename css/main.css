@@ -28,7 +28,7 @@
 html {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 body {
   background-color: #000000;
@@ -36,7 +36,7 @@ body {
   height: 100%;
   width: 100%;
   overflow: auto;
-  position: relative;
+  /*position: relative;*/
 }
 body a {
   color: #73181e;
@@ -136,28 +136,34 @@ a:hover img.panel_avatar {
 }
 .panel-social {
   padding: 0px;
+  margin: 0px;
   width: 100%;
   text-align: center;
   font-size: 40px;
 }
 .panel-social li {
   display: inline-block;
-  margin: 2.5px;
+  margin: 0px;
   list-style: none;
 }
 .panel-summary {
   text-align: center;
   font-size: 24px;
   color: #1d9722;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
-@media (max-height: 800) {
+@media (max-width: 768px) {
+  .panel-summary {
+    margin-bottom: 20px;
+  }
+}
+@media (max-height: 760px) {
   #navbar {
     display: none;
   }
 }
 #navbar ul {
-  margin-top: 20px;
+  margin-top: 0px;
   text-align: center;
   padding: 0 !important;
 }
@@ -166,7 +172,7 @@ a:hover img.panel_avatar {
   margin-bottom: 8px;
   margin-top: 0px;
   font-weight: 300;
-  font-size: 35px;
+  font-size: 30px;
   padding: 0 !important;
 }
 #navbar li.active {
@@ -175,11 +181,18 @@ a:hover img.panel_avatar {
 }
 #navbar ul li:hover {
   text-decoration: none;
-  font-size: 35px;
+  font-size: 30px;
 }
 #navbar .active a {
   color: yellow;
   background-color: green;
+}
+.nav > li > a {
+  padding: 0px;
+}
+.nav > li > a:hover {
+  padding: 0px;
+  background-color: transparent;
 }
 /*#######################*/
 /*#       CONTENT       #*/
