@@ -185,6 +185,11 @@ a:hover img.panel-avatar {
     display: none;
   }
 }
+@media (max-width: 768px) {
+  #navbar {
+    display: none;
+  }
+}
 #navbar ul {
   margin-top: 0px;
   text-align: center;
