@@ -155,17 +155,14 @@ a:hover img.panel_avatar{
 	font-size: @panel-nav-text-size;
 	padding:0 !important;
 }
-#navbar li.active{
-	color:yellow;
-	border: 1px solid red;
-}
+
 #navbar ul li:hover{
 	text-decoration: none;
 	font-size: @panel-nav-text-size-hover;
 }
 #navbar .active a{
-	color: yellow;
-	background-color: green;
+	font-weight:bold;
+
 } 
 
 .nav>li>a{
@@ -189,13 +186,16 @@ a:hover img.panel_avatar{
 #content a:hover{
 	color : @content-link-color-hover;
 }
-
+#content section{
+	min-height: 300px;
+}
 #content img{
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 }
 #content h2{
+	padding-top: 50px;
 	font:@font-large ;
 	font-size: @content-section-title-size;
 	color: @content-title-text-color;
