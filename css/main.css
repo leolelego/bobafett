@@ -244,6 +244,7 @@ a:hover img.panel-avatar {
   padding-bottom: 10px;
   font-style: bold;
   border-bottom: 1px solid #e5e5e5;
+  font-weight: bold;
 }
 #content h2 i {
   color: #a62a2c;
