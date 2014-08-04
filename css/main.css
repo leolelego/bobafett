@@ -153,12 +153,6 @@ a:hover img.panel-avatar {
   font-size: 32px;
 }
 .panel-social {
-  transition: all 600ms ;
-  /*browser specific versions*/
-  -moz-transition: all 600ms ;
-  -ms-transition: all 600ms ;
-  -webkit-transition: all 600ms ;
-  -o-transition: all 600ms ;
   padding: 0px;
   margin: 0px;
   width: 100%;
@@ -166,7 +160,7 @@ a:hover img.panel-avatar {
   font-size: 36px;
 }
 @media (max-width: 992px) {
-  .panel-social {
+  ul.panel-social li:nth-of-type(1n+5) {
     display: none;
   }
 }
@@ -185,16 +179,6 @@ a:hover img.panel-avatar {
   .panel-summary {
     margin-bottom: 20px;
   }
-}
-#navbar {
-  /*	@media(max-width: @screen--min){
-		display: none;
-	}*/
-  /*browser specific versions*/
-  -moz-transition: all 600ms ;
-  -ms-transition: all 600ms ;
-  -webkit-transition: all 600ms ;
-  -o-transition: all 600ms ;
 }
 @media (max-height: 700px) {
   #navbar {
