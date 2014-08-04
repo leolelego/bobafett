@@ -12,13 +12,14 @@
     <ul class="panel-social">
       {% if site.email %}<li><a href="mailto:{{ site.email }}"><i class="fa fa-envelope-square"></i></a></li>{% endif %}
       {% if site.linkedin %}<li><a href="http://fr.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin-square" target="_blank"></i></a></li>{% endif %}
-      {% if site.google %}<li><a href="https://plus.google.com/+{{site.google}}" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>{% endif %}
+
       {% if site.github %}<li><a href="https://github.com/{{site.github}}" target="_blank"><i class="fa fa-github-square" ></i></a></li>{% endif %}
+      {% if site.google %}<li class="noresponsive"><a href="https://plus.google.com/+{{site.google}}" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>{% endif %}
       {% if site.twitter %}<li><a href="http://www.twitter.com/{{site.twitter}}" target="_blank"><i class="fa fa-twitter-square"></i></a></li>{% endif %}
       {% if site.facebook %}<li><a href="https://www.facebook.com/{{site.facebook}}" target="_blank"><i class="fa fa-facebook-square"></i></a></li>{% endif %}
     </ul>
     <div class="panel-summary">{{ site.summary }}</div>
-    <nav id="navbar" class="hidden-xs" role="navigation">
+    <nav id="navbar"  role="navigation">
       <ul class="nav">
         {% if site.categories.experiences %}<li ><a class="scrollTo" href="#experiences">Experiences</a></li>{% endif %}
         {% if site.categories.projects %}<li><a class="scrollTo" href="#projects"> Projects</a></li>{% endif %}
@@ -29,6 +30,6 @@
       </ul>
     </nav>
   </div> 
-  <img src="{{ site.url }}{{ site.panel_background }}" class="panel-background-image hidden-xs" ></img>
+  <img src="{{ site.url }}{{ site.panel_background }}" class="panel-background-image" ></img>
 
 </div>

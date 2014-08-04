@@ -4,6 +4,8 @@
 /*#######################*/
 /*#       GENERAL       #*/
 /*#######################*/
+@responsive-witdh :@screen-sm-min;
+
 html {
 	height: 100%;
 	width: 100%;
@@ -44,14 +46,21 @@ td img, th img{
 	font-style: bold;
 }
 
+
 /*#######################*/
 /*#        PANEL        #*/
 /*#######################*/
+#ribbon{
+	position: fixed; top: 0; left: 0; border: 0; z-index:9999;
+	@media(max-width: @responsive-witdh){
+		position: absolute;
+	}
+}
 #panel{
 	color: @panel-text-color;
 	height: 100%;
 	z-index: 9999;
-	@media(min-width: @screen-sm-min){
+	@media(min-width: @responsive-witdh){
 		position: fixed;
 		left: 0;
 		right: 0;
@@ -78,7 +87,9 @@ td img, th img{
 	-ms-filter: blur(@panel-bg-blur);
 	filter: blur(@panel-bg-blur);	
 	opacity: @panel-bg-opacity;
-
+	@media(max-width: @responsive-witdh){
+		display:none;
+	}
 }
 .panel_avatar{
 	background-color: transparent;
@@ -113,8 +124,18 @@ a:hover img.panel_avatar{
 	text-align: center;
 	margin-top: 20px;
 	font-size: @panel-name-size;
+	
 }
 .panel-social{
+	transition : all 600ms ;
+	/*browser specific versions*/
+	-moz-transition : all 600ms ;
+	-ms-transition : all 600ms ;
+	-webkit-transition : all 600ms ;
+	-o-transition : all 600ms ;
+	@media(max-width: @screen-md-min){
+		display: none;
+	}
 	padding: 0px;
 	margin: 0px;
 	width: 100%;
@@ -131,11 +152,19 @@ a:hover img.panel_avatar{
 	font-size: @panel-summary-size;
 	color :@panel-summary-color;
 	margin-bottom: 10px;
-	@media(max-width: @screen-sm-min){
+	@media(max-width: @responsive-witdh){
 		margin-bottom: 20px;
 	}
 }
 #navbar{
+/*	@media(max-width: @screen--min){
+		display: none;
+	}*/
+		/*browser specific versions*/
+	-moz-transition : all 600ms ;
+	-ms-transition : all 600ms ;
+	-webkit-transition : all 600ms ;
+	-o-transition : all 600ms ;
 	@media(max-height: @content-nav-height-to-remove ){
 		display:none;
 	}
