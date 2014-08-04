@@ -11,6 +11,7 @@
 
 /* --> Fonts */
 @font-global                      : 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@font-large                       : 'HelveticaNeue', 'Helvetica Neue ',  Arial, Helvetica, sans-serif;
 
 /*#######################*/
 /*#        PANEL        #*/
@@ -18,10 +19,11 @@
 
 /* --> Colors */
 @panel-text-color                 : white;
-@panel-summary-color              : @boba-gold;
+@panel-summary-color              : @boba-green-light;
 
-@panel-link-color                 : @link-color;
-@panel-link-color-hover           : @link-color-hover;
+@panel-link-color                 : @boba-gold;
+@panel-link-color-hover           : @boba-green;
+@panel-nav-color-hover			  : transparent;
 
 /* --> background */
 @panel-filter-and-background-color: black;
@@ -31,12 +33,12 @@
 /* --> sizes */
 @panel-name-size                  : 32px;
 @panel-summary-size               : 24px;
-@panel-socialicon-size            : 40px;
-@panel-nav-text-size              : 24px;
-@panel-nav-text-size-hover        : 26px;
+@panel-socialicon-size            : 36px;
+@panel-nav-text-size              : 30px;
+@panel-nav-text-size-hover        : @panel-nav-text-size;
 @panel-nav-text-marginbtm-size    : 8px;
 @panel-avatar-size                : 180px;
-
+@content-nav-height-to-remove	  : 700px; // @screen-sm-min + 30
 /*#######################*/
 /*#       CONTENT       #*/
 /*#######################*/
@@ -44,8 +46,8 @@
 @content-background-color         : white;
 @content-text-color               : black;
 
-@content-quote-color              : @oil;
-@content-title-text-color         : @content-text-color;
+@content-quote-color              : @boba-red-light-o;
+@content-title-text-color         : @boba-red-light;
 @content-post-title-color         : @content-text-color;
 @content-post-info-color          : #818181;
 @content-link-color               : @link-color;
@@ -53,13 +55,14 @@
 @content-title-icon-color         : @content-text-color;
 @content-post-icon-color          : @content-text-color;
 @content-pdf-button-color         : black;
-@content-pdf-button-color-hover   : @content-pdf-button-color;
+@content-pdf-text-color           : white;
+@content-pdf-button-color-hover   : @boba-orange;
 
 
 /* --> sizes */
-@content-post-text-size           : 14px;
+@content-post-text-size           : 18px;
 @content-quote-font-size          : 20px;
-@content-section-title-size       : 30px;
+@content-section-title-size       : 35px;
 @content-post-title-font-size     : 22px;
 @content-post-info-font-size      : 15px;
 @content-post-typelist-font-size  : 18px; /* Post font size where is type is list (like hobbies, skills or informations)*/
@@ -69,7 +72,7 @@
 /*#        FOOTER       #*/
 /*#######################*/
 @footer-background-color          : black;
-@footer-text-color                : @oil;
+@footer-text-color                : grey;
 @footer-link-color                : @link-color;
 @footer-link-hover-color          : @link-color-hover;
 

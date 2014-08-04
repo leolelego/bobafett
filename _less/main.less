@@ -4,11 +4,13 @@
 /*#######################*/
 /*#       GENERAL       #*/
 /*#######################*/
+@responsive-witdh :@screen-sm-min;
+
 html {
 	height: 100%;
 	width: 100%;
 
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 body {
 	background-color: @panel-filter-and-background-color;
@@ -16,7 +18,7 @@ body {
 	height: 100%;
 	width: 100%;
 	overflow: auto;
-	position: relative;
+	/*position: relative;*/
 
 }
 body a{
@@ -44,14 +46,21 @@ td img, th img{
 	font-style: bold;
 }
 
+
 /*#######################*/
 /*#        PANEL        #*/
 /*#######################*/
+#ribbon{
+	position: fixed; top: 0; left: 0; border: 0; z-index:9999;
+	@media(max-width: @responsive-witdh){
+		position: absolute;
+	}
+}
 #panel{
 	color: @panel-text-color;
 	height: 100%;
 	z-index: 9999;
-	@media(min-width: @screen-sm-min){
+	@media(min-width: @responsive-witdh){
 		position: fixed;
 		left: 0;
 		right: 0;
@@ -78,9 +87,12 @@ td img, th img{
 	-ms-filter: blur(@panel-bg-blur);
 	filter: blur(@panel-bg-blur);	
 	opacity: @panel-bg-opacity;
-
+	@media(max-width: @responsive-witdh){
+		display:none;
+	}
 }
 .panel_avatar{
+	background-color: transparent;
 	background-repeat: no-repeat;
 	background-size: @panel-avatar-size @panel-avatar-size;
 	height: @panel-avatar-size;
@@ -93,6 +105,7 @@ td img, th img{
 	border-radius: 4px solid #e5e5e5;
 }
 a img.panel_avatar{
+	background-color: black;
 	transition : all 600ms ;
 	/*browser specific versions*/
 	-moz-transition : all 600ms ;
@@ -111,30 +124,56 @@ a:hover img.panel_avatar{
 	text-align: center;
 	margin-top: 20px;
 	font-size: @panel-name-size;
+	
 }
 .panel-social{
+	transition : all 600ms ;
+	/*browser specific versions*/
+	-moz-transition : all 600ms ;
+	-ms-transition : all 600ms ;
+	-webkit-transition : all 600ms ;
+	-o-transition : all 600ms ;
+	@media(max-width: @screen-md-min){
+		display: none;
+	}
 	padding: 0px;
+	margin: 0px;
 	width: 100%;
 	text-align: center;
 	font-size: @panel-socialicon-size;
 }
 .panel-social li {
 	display: inline-block;
-	margin: 2.5px;
+	margin: 0px;
 	list-style: none;
 }
 .panel-summary{
 	text-align: center;
 	font-size: @panel-summary-size;
 	color :@panel-summary-color;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
+	@media(max-width: @responsive-witdh){
+		margin-bottom: 20px;
+	}
 }
 #navbar{
-
+/*	@media(max-width: @screen--min){
+		display: none;
+	}*/
+		/*browser specific versions*/
+	-moz-transition : all 600ms ;
+	-ms-transition : all 600ms ;
+	-webkit-transition : all 600ms ;
+	-o-transition : all 600ms ;
+	@media(max-height: @content-nav-height-to-remove ){
+		display:none;
+	}
 }
 #navbar ul{
-	margin-top: 20px;
-	text-align: right;
+	margin-top: 0px;
+	text-align: center;
+	padding:0 !important;
+
 
 }
 #navbar  ul li{
@@ -143,20 +182,25 @@ a:hover img.panel_avatar{
 	margin-top: 0px;
 	font-weight: 300;
 	font-size: @panel-nav-text-size;
-	margin-right: 12px;
+	padding:0 !important;
 }
-#navbar li.active{
-	color:yellow;
-	border: 1px solid red;
-}
+
 #navbar ul li:hover{
 	text-decoration: none;
 	font-size: @panel-nav-text-size-hover;
 }
 #navbar .active a{
-	color: yellow;
-	background-color: green;
+	font-weight:bold;
+
 } 
+
+.nav>li>a{
+	padding: 0px;
+}
+.nav>li>a:hover{
+	padding: 0px;
+	background-color: @panel-nav-color-hover;
+}
 /*#######################*/
 /*#       CONTENT       #*/
 /*#######################*/
@@ -171,32 +215,41 @@ a:hover img.panel_avatar{
 #content a:hover{
 	color : @content-link-color-hover;
 }
-
+ section{
+	
+}
 #content img{
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 }
 #content h2{
+	padding-top: 50px;
+	font:@font-large ;
 	font-size: @content-section-title-size;
-	padding-top: 10px;
 	color: @content-title-text-color;
 	padding-bottom: 10px;
 	font-style: bold;
 	border-bottom: 1px solid #e5e5e5;
 }
 #content h2 i{
-	color: @content-title-icon-color;
+	color: @content-title-text-color;
 }
 .content-quote{
 	width: 100%;
 	text-align: justify;
 	font-weight: 300;
 	font-size: @content-quote-font-size;
-	color: @content-quote-color;
 	padding : 40px;
 		font-style : italic;
 
+
+}
+.content-posts {
+	min-height: 200px;
+}
+.content-quote span{
+	color: @content-quote-color;
 
 }
 .content-posts i{
@@ -228,6 +281,7 @@ a:hover img.panel_avatar{
 	font-size: @content-post-title-font-size;
 	color :@content-post-title-color;
 
+
 }
 .content-posts  time {
 	text-align: right;
@@ -258,9 +312,11 @@ a.content-download-button{
 	margin-left     : auto;
 	margin-right    : auto;
 	background-color: @content-pdf-button-color;
+	color 			: @content-pdf-text-color !important;
 	border-radius   : 5px;
 	text-align      : center;
 	font-size       : @content-pdf-text-size;
+	font-style	 	: bold !important;
 
 }
 a:hover.content-download-button{
