@@ -2,6 +2,7 @@
 /*#######################*/
 /*#       IMPORT        #*/
 /*#######################*/
+/*#F7A641;*/
 /*#######################*/
 /*#       GENERAL       #*/
 /*#######################*/
@@ -42,7 +43,7 @@ body a {
   color: #73181e;
 }
 body a:hover {
-  color: #f7a641;
+  color: #ec752b;
   text-decoration: none;
 }
 table {
@@ -81,7 +82,7 @@ th img {
 #panel {
   color: #ffffff;
   height: 100%;
-  z-index: 9999;
+  z-index: 1000;
 }
 @media (min-width: 768px) {
   #panel {
@@ -92,7 +93,7 @@ th img {
   }
 }
 #panel a {
-  color: #dd8837;
+  color: #ec752b;
 }
 #panel a:hover {
   color: #0c710f;
@@ -117,7 +118,7 @@ th img {
     display: none;
   }
 }
-.panel_avatar {
+.panel-avatar {
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 180px 180px;
@@ -130,7 +131,7 @@ th img {
   border-radius: 100%;
   border-radius: 4px solid #e5e5e5;
 }
-a img.panel_avatar {
+a img.panel-avatar {
   background-color: black;
   transition: all 600ms ;
   /*browser specific versions*/
@@ -139,7 +140,7 @@ a img.panel_avatar {
   -webkit-transition: all 600ms ;
   -o-transition: all 600ms ;
 }
-a:hover img.panel_avatar {
+a:hover img.panel-avatar {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -239,7 +240,7 @@ a:hover img.panel_avatar {
   color: #73181e;
 }
 #content a:hover {
-  color: #f7a641;
+  color: #ec752b;
 }
 #content img {
   margin-left: auto;
@@ -339,7 +340,7 @@ a.content-download-button {
   font-style: bold !important;
 }
 a:hover.content-download-button {
-  background-color: #f7a641;
+  background-color: #ec752b;
 }
 /*#######################*/
 /*#        FOOTER       #*/
@@ -353,5 +354,5 @@ footer a {
   color: #73181e;
 }
 footer a:hover {
-  color: #f7a641;
+  color: #ec752b;
 }
