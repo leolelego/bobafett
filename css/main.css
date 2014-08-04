@@ -203,9 +203,6 @@ a:hover img.panel_avatar {
 #content a:hover {
   color: #f7a641;
 }
-#content section {
-  min-height: 300px;
-}
 #content img {
   margin-left: auto;
   margin-right: auto;
@@ -230,6 +227,9 @@ a:hover img.panel_avatar {
   font-size: 20px;
   padding: 40px;
   font-style: italic;
+}
+.content-posts {
+  min-height: 200px;
 }
 .content-quote span {
   color: #b12f34;
