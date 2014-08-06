@@ -25,7 +25,7 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 #### get it :
 
 - download **[sources file](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/archive/gh-pages.zip)** or **[clone](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/fork)**, customize it and run Jekyll on your server,
-- [**Fork the gh-pages branch**](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/fork) to a new project of your github (best choice). And *Pull* it on your computer.
+- [**fork the gh-pages branch**](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/fork) to a new project of your github (best choice). And *Pull* it on your computer.
 
 #### Customize
 
@@ -39,7 +39,7 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 - intstall Jekyll : [jekyllrb.com](http://jekyllrb.com/) *(if needed)*,
 - go to the folder where is your resume/theme with your **terminal**,
 - start your server : `jekyll serve -w --baseurl ''`,
-- Go to [http://localhost:4000](http://localhost:4000).
+- go to [http://localhost:4000](http://localhost:4000).
 
 
 
@@ -55,8 +55,8 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 
 #### There is 2 statics branches :
 
-- gh-pages for the [demo](http://bobafett.leoderbois.com), [to download](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/archive/gh-pages.zip) and [to fork](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/fork),
-- Develop for improvements and fixes,
+- `gh-pages` for the [demo](http://bobafett.leoderbois.com), [to download](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/archive/gh-pages.zip) and [to fork](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/fork),
+- `develop` for improvements and fixes,
 
 
 #### This project use **Frameworks** : 
