@@ -36,7 +36,6 @@ body {
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   height: 100%;
   width: 100%;
-  overflow: auto;
   /*position: relative;*/
 }
 body a {
@@ -83,11 +82,13 @@ th img {
   color: #ffffff;
   z-index: 1000;
   height: 100%;
-  min-height: 100%;
 }
 @media (min-width: 992px) {
   #panel {
     position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 25%;
   }
 }
 #panel a {

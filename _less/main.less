@@ -16,8 +16,7 @@ body {
 	background-color: @panel-filter-and-background-color;
 	font-family: @font-global;
 	height: 100%;
-		width: 100%;
-	overflow: auto;
+	width: 100%;
 	/*position: relative;*/
 
 }
@@ -60,10 +59,12 @@ td img, th img{
 	height: 100%;
 	z-index: 1000;
     height: 100%;
-    min-height: 100%;
 
 	@media(min-width: @responsive-witdh){
 		position: fixed;
+		top: 0px;
+		left: 0px;
+    	width: 25%;
 	}
 }
 #panel a{
