@@ -2,8 +2,8 @@
 title      : Boba Fett's resume #title of the resume - for browser
 email      : boba@deathstar.gal # your email 
 description: # Not used
-baseurl    : "/Boba-Fett-Theme-For-Jekyll" # Github subfolder for project. If is your main git put ""
-url        : "http://leoderbois.github.io/Boba-Fett-Theme-For-Jekyll/"  # Url of your site 
+baseurl    : "" # Github subfolder for project . If is your main git or you use a CNAME put ""
+url        : "http://bobafett.leoderbois.com"  # Url of your site 
 
 
 metadata: ["Leo Derbois","github","jekyll","jekyllrb","resume","CV","Boba Fett"] # Metadata for 
