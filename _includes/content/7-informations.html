@@ -1,0 +1,54 @@
+  <section  lass="col-lg-12 col-md-12 col-sm-12 col-xs-12"  >
+  <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><i class="fa fa-info"></i> Informations</h2>
+
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content-posts  
+content-list">
+	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+	<h4>Contacts</h4>
+    <ul >
+    	{%if site.email %}<li><a href="mailto:{{ site.email}}}"><i class="fa fa-paper-plane"></i>  {{ site.email }}</a></li>{% endif %}
+    	{%if site.phone %}<li><a href="tel:{{ site.phone}}}"><i class="fa fa-phone"></i>  {{ site.phone }}</a></li>{% endif %}
+      	{%if site.blog_url and site.blog_name %}<li><a href="{{ site.blog_url }}"><i class="fa fa-globe"></i>  {{ site.blog_name }}</a></li>{% endif %}
+
+      	{%if site.city %}<li><i class="fa fa-map-marker"></i>{%if site.street and site.zipcode%} {{ site.street }}
+			<div>{{ site.zipcode }} {% endif %} {{ site.city }} {%if site.street and site.zipcode%}</div>{% endif %}
+      	</li>{% endif %}
+
+    </ul>
+    </div>
+    
+    <div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
+    <h4>Social Networking</h4>
+    <ul >
+      {% if site.linkedin %}<li><a href="http://fr.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin" target="_blank"></i> {{site.name}}</a></li>{% endif %}
+      {% if site.google %}<li><a href="https://plus.google.com/+{{site.google}}" target="_blank"><i class="fa fa-google-plus"></i> {{site.name}}</a></li>{% endif %}
+      {% if site.github %}<li><a href="https://github.com/{{site.github}}" target="_blank"><i class="fa fa-github" ></i> {{site.github}}</a></li>{% endif %}
+      {% if site.twitter %}<li><a href="http://www.twitter.com/{{site.twitter}}" target="_blank"><i class="fa fa-twitter"></i> @{{site.twitter}}</a></li>{% endif %}
+      {% if site.facebook %}<li><a href="https://www.facebook.com/{{site.facebok}}" target="_blank"><i class="fa fa-facebook"></i> {{site.facebook}}</a></li>{% endif %}
+    </ul>
+    </div>
+    
+    {% if site.informations-custom and site.speaking-langugages %}
+    <div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
+    <h4>Others</h4>
+    <ul>
+      {% for custom in site.informations-custom %}
+      	<li><i class="fa fa-{% if custom.logo %}{{ custom.logo }}{% else %}info{% endif %}"></i> {{ custom.text }}</li>
+      {% endfor %}
+
+      {% if site.speaking-langugages %}
+      <li><i class="fa fa-language"></i> Languages :
+        <ul>
+         {% for lang in site.speaking-langugages %}
+          <li>{{lang}} </li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endif %}
+    </ul>
+    {% endif %}
+    </div>
+  </div>
+
+  </section>
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="informations" ></div>

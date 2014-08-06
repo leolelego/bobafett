@@ -1,20 +1,80 @@
 # Site settings
-title: Resume Of Boba Fett
-email: contact@leoderbois.com
-description: "Developer analyst specialized </br>in OSX & iOS"
-baseurl: "/Boba-Fett-Theme-For-Jekyll"
-url: "http://www.leoderbois.com/Boba-Fett-Theme-For-Jekyll/"
-#Personnal INforamtions
+title      : Boba Fett's resume #title of the resume - for browser
+email      : boba@deathstar.gal # your email 
+description: # Not used
+baseurl    : "/Boba-Fett-Theme-For-Jekyll" # Github subfolder for project. If is your main git put ""
+url        : "http://leoderbois.github.io/Boba-Fett-Theme-For-Jekyll/"  # Url of your site 
 
-userName: Boba Fett
-userDescription: killer intergalactic
-otherSiteURL:  http://www.leoderbois.com
-otherSiteName : Boba Fett At School
-twitter_username: bobafett
-github_username:  bobafett
 
-# Build settings
+metadata: ["Leo Derbois","github","jekyll","jekyllrb","resume","CV","Boba Fett"] # Metadata for 
+# If you want to analyse your site  with google analytics (code like UA-5293-1)
+googleAnalyticsID:  
+############################# Personnal Inforamtions ################################
+name   : Boba Fett #Your name
+summary: Intergalactic Hit Man # a simple sentence about you
+quote  : "kill and kidnap people are all my life. My father selects me because was the best in a million of sons. I was made and educate to kill, kidnap and guard your body like nobody can do better than me !" # a quote about you
+phone  : +33 06 71 82 84 56 # your phone number
+
+# Where you leave ?
+street : 45 Wookies street
+city   : Kamino			
+zipcode: 45002				
+
+
+# if you have a site or a custom blog
+blog_name: Boba Fett At School 
+blog_url : http://www.osxbricks.com
+
+# your social informations
+linkedin: bobafett # linkedin username
+google  : bobafett # google username
+github  : bobafett # github username
+twitter : bobafett # twitter username
+facebook: bobafett # facebook username
+
+
+############################# Site Options ################################
+favicon         : /assets/bobafett.ico 		# website Favicon  / Need to be local (in assets forlder)
+avatar          : /assets/bobafett.jpg 		# Avatar/photo  / Need to be local (in assets forlder)
+panel_background: /assets/slave_one.png 	# panel background images / Need to be local (in assets folder)
+enable_ribbon   : yes 						# remove this line to remove the github ribbon 
+
+
+############################ Resume Content ################################
+# Your Hobbies
+#if you remove this, articles with 'hobbies' category are considerated
+hobbies: ["Pod Racer Competition", "Computer Sciences","Women","Cooking for friends"]
+
+
+# Your Kills
+#if you remove this, articles with 'skills' category are considerated
+skills:
+- name: Weapons
+  values: ["Blasters","Heavy ranged","Melee"]
+- name: Spacecraft
+  values: ["Slave I & II","A-WING FIGHTER","AAT BATTLE TANK"]
+- name: Cooking specialties
+  values: ["Cookies","Asian food","Snails"]
+
+# Some inforamtions you want to add
+informations-custom:
+- text: Space ship drive Licence + vehicle
+  logo: space-shuttle
+- text: Cooking Wookie stuff
+  logo: spoon
+- text: Have a lot of guns
+
+# Languages you speak (put your level in parentheses)
+speaking-langugages: ["Mandalorian (native)","Huttese (professionnal)","Wookie (bases)"]
+
+# a link to your PDF version of the remuse. If you remove, the button will disappear. 
+resume_pdf: http://cl.ly/3c3a3F2v0a0v/download/boba_fett.pdf
+
+
+############################# Build setting (don't touch!) ################################
 markdown: kramdown
 permalink: pretty
 
-#plugin
+############################# Plugins ################################
+
+# No plugin
