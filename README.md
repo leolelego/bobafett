@@ -1,7 +1,9 @@
 Boba Fett Theme For Jekyll
 ==========================
 
-A **Resume Theme for [Jekyll](http://jekyllrb.com)** oriented for developpers. All the magic of this theme is that **sections fill via Markdown** files.  *It makes your resume such as Boba Fett*.
+A **Resume Theme for [Jekyll](http://jekyllrb.com)** oriented for developpers. All the magic of this theme is that **sections fill via Markdown** files. 
+
+> It makes your resume such as Boba Fett.
 
 Browser | Mobile
 -------|--------
