@@ -1,7 +1,7 @@
 Boba Fett Theme For Jekyll
 ==========================
 
-A **Resume Theme for [Jekyll](http://jekyllrb.com)** oriented for developpers.*It makes your **resume** such as Boba Fett*.
+A **Resume Theme for [Jekyll](http://jekyllrb.com)** oriented for developpers. *It makes your **resume** such as Boba Fett.*
 
 Browser | Mobile
 -------|--------
