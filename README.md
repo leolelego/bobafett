@@ -5,7 +5,7 @@ A **Resume Theme for [Jekyll](http://jekyllrb.com)** oriented for developpers. A
 
 > It makes your resume such as Boba Fett.
 
-Browser | Mobile
+Desktop | Mobile
 -------|--------
 ![screen](assets/browser-demo.png)| ![screen](assets/mobile-demo.png)
 
