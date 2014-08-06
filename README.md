@@ -1,9 +1,12 @@
 Boba Fett Theme For Jekyll
 ==========================
 
-Boba Fett Theme is a theme/template for [Jekyll](http://jekyllrb.com) makes your **resume** such as Boba Fett
+A **Resume Theme for [Jekyll](http://jekyllrb.com)** oriented for developpers.*It makes your **resume** such as Boba Fett*.
 
-![screen]()
+Browser | Mobile
+-------|--------
+![screen](assets/safari-demo.png)| ![screen](assets/iphone-demo.png)
+
 
 ## How to use it
 
@@ -15,14 +18,14 @@ There is three files to customize your site :
 - `_less/bobafett.less` for customizing the **desgin** (fonts, colors, sizes...),
 - `CNAME` for your custom domain.
 
-All sections in the resume are fill with your **markdown** post in `_posts` 
+All sections of the resume are filled with your **markdown** post in `_posts`.
  
 ### Quick start
 
 #### get it :
 
-- download **[sources file](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/archive/master.zip)** or **clone**, customize it and run Jekyll on your server,
-- [**Fork the master branch**](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/fork) to a new project of your github (best choice). And *Pull* it on your computer.
+- download **[sources file](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/archive/gh-pages.zip)** or **[clone](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/fork)**, customize it and run Jekyll on your server,
+- [**Fork the gh-pages branch**](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/fork) to a new project of your github (best choice). And *Pull* it on your computer.
 
 #### Customize
 
@@ -33,9 +36,9 @@ All sections in the resume are fill with your **markdown** post in `_posts`
 
 #### Start your server
 
-- intstall Jekyll : [jekyllrb.com](http://jekyllrb.com/) if needed,
+- intstall Jekyll : [jekyllrb.com](http://jekyllrb.com/) *(if needed)*,
 - go to the folder where is your resume/theme with your **terminal**,
-- launch command : `jekyll serve -w --baseurl ''`,
+- start your server : `jekyll serve -w --baseurl ''`,
 - Go to [http://localhost:4000](http://localhost:4000).
 
 
@@ -45,30 +48,27 @@ All sections in the resume are fill with your **markdown** post in `_posts`
 - [Boba Fett Resume](http://bobafett.leoderbois.com)
 - [Léo Derbois resume](http://www.leoderbois.com)
 
-> tell me if you use my theme :) 
+> [tell me](mailto:contact@leoderbois.com) if you use my theme 😊 
 
 
 ## Development
 
 #### There is 2 statics branches :
 
-- Master for the *releases* version,
-- gh-pages for the [demo](http://bobafett.leoderbois.com),
-
-and branches for fixes and developments.
+- gh-pages for the [demo](http://bobafett.leoderbois.com), [to download](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/archive/gh-pages.zip) and [to fork](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/fork),
+- Develop for improvements and fixes,
 
 
 #### This project use **Frameworks** : 
 
 - [Jekyll](http://jekyllrb.com) 
-- [Boostrap](http://getbootstrap.com)
-- [less](http://lesscss.org)
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+- [Boostrap](http://getbootstrap.com) (included, nothing to do)
+- [less](http://lesscss.org) (Not essential but recommended)
+- [Font Awesome](http://fortawesome.github.io/Font-Awesome/) (included, nothing to do)
 
 ## Todo
 
-- scroll animaton href# in nav (in JS) *need help !*
-- min-height nav
+- Nothing scheduled.
 
 **[Contact me](mailto:contact@leoderbois.com) if you have ideas !**
 

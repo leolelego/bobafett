@@ -16,7 +16,7 @@ body {
 	background-color: @panel-filter-and-background-color;
 	font-family: @font-global;
 	height: 100%;
-	width: 100%;
+		width: 100%;
 	overflow: auto;
 	/*position: relative;*/
 
@@ -59,11 +59,11 @@ td img, th img{
 	color: @panel-text-color;
 	height: 100%;
 	z-index: 1000;
+    height: 100%;
+    min-height: 100%;
+
 	@media(min-width: @responsive-witdh){
 		position: fixed;
-		left: 0;
-		right: 0;
-		width: 25%;
 	}
 }
 #panel a{
@@ -133,6 +133,7 @@ a:hover img.panel-avatar{
 	text-align: center;
 	font-size: @panel-socialicon-size;
 
+
 }
 
 .panel-social li {
@@ -197,6 +198,9 @@ a:hover img.panel-avatar{
 	padding: 20px 10px 20px 60px;
 	color: @content-text-color;
 	background-color: @content-background-color;
+	@media(max-width: @screen-sm-min){
+		padding: 0px;
+	}
 }
 #content a{
 	color : @content-link-color;
@@ -213,14 +217,16 @@ a:hover img.panel-avatar{
 	display: block;
 }
 #content h2{
-	padding-top: 50px;
 	font:@font-large ;
 	font-size: @content-section-title-size;
 	color: @content-title-text-color;
+	padding: 0px;
 	padding-bottom: 10px;
 	font-style: bold;
 	border-bottom: 1px solid #e5e5e5;
 	font-weight: bold;
+
+
 }
 #content h2 i{
 	color: @content-title-text-color;
@@ -232,6 +238,9 @@ a:hover img.panel-avatar{
 	font-size: @content-quote-font-size;
 	padding : 40px;
 		font-style : italic;
+			@media(max-width: @screen-sm-min){
+		padding: 30px;
+	}
 
 
 }
@@ -262,6 +271,10 @@ a:hover img.panel-avatar{
 	padding: 30px;
 	margin-bottom: 10px;
 	list-style-type: none;
+		@media(max-width: @responsive-witdh){
+		padding:0px;
+
+	}
 }
 .post-content{
 	font-size: @content-post-text-size ;
@@ -270,6 +283,10 @@ a:hover img.panel-avatar{
 .post-title{
 	font-size: @content-post-title-font-size;
 	color :@content-post-title-color;
+	@media(max-width: @screen-sm-min){
+			font-weight: bold;
+
+	}
 
 
 }
@@ -294,9 +311,15 @@ color: @content-post-info-color;
 	color: #585858;
 	font-size: 14px;
 }
+#informations h4{
+	@media(max-width: @screen-sm-min){
+		font-weight:bold;
+	}
+}
 a.content-download-button{
 	margin-top      : 50px;
 	padding         : 10px;
+	margin-bottom	: 20px;
 	width           : 300px;
 	display         : block;
 	margin-left     : auto;
