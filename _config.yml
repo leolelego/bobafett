@@ -53,12 +53,18 @@ hobbies:
 # Your Kills
 #if you remove this, articles with 'skills' category are considerated
 skills:
-- name: Weapons
-  values: ["Blasters","Heavy ranged","Melee"]
-- name: Spacecraft
-  values: ["Slave I & II","A-WING FIGHTER","AAT BATTLE TANK"]
-- name: Cooking specialties
-  values: ["Cookies","Asian food","Snails"]
+ - sectionName: Hitman skills
+   elements:
+    - name: Weapons
+      values: ["Blasters","Heavy ranged","Melee"]
+    - name: Spacecraft
+      values: ["Slave I & II","A-WING FIGHTER","AAT BATTLE TANK"]
+ - sectionName: Typist skills
+   elements:
+    - name: Microsoft Office
+      values: ["Word","Excel","Powerpoint"]
+    - name: Apple iWork
+      values: ["Pages","Numbers"]
 
 # Some inforamtions you want to add
 informations-custom:
