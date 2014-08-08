@@ -59,6 +59,8 @@ skills:
       values: ["Blasters","Heavy ranged","Melee"]
     - name: Spacecraft
       values: ["Slave I & II","A-WING FIGHTER","AAT BATTLE TANK"]
+    - name: Cooking
+      values: ["Cake","Muffins"]
  - sectionName: Typist skills
    elements:
     - name: Microsoft Office
