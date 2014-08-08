@@ -4,7 +4,7 @@
   <div id="panel" > 
     {% if site.avatar %}
       {% if site.blog_url %}<a target="_blank" href="{{ site.blog_url }}">{% endif %}
-      <img src="{{ site.url }}{{ site.avatar }}" class="panel-avatar"/>
+      <div  class="panel-avatar"></div>
       {% if site.blog_url %}</a>{% endif %}
     {% endif %}
 
@@ -31,6 +31,6 @@
       </ul>
     </nav>
   </div> 
-  <img src="{{ site.url }}{{ site.panel_background }}" class="panel-background-image" ></img>
+  <div class="panel-background-image" ></div>
 
 </div>

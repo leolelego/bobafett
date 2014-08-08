@@ -35,8 +35,8 @@ facebook: bobafett # facebook username
 
 ############################# Site Options ################################
 favicon         : /assets/bobafett.ico 		# website Favicon  / Need to be local (in assets forlder)
-avatar          : /assets/bobafett.jpg 		# Avatar/photo  / Need to be local (in assets forlder)
-panel_background: /assets/slave_one.png 	# panel background images / Need to be local (in assets folder)
+#avatar          : NOW IN BOBAFETT.less
+#panel_background: NOW IN BOBAFETT.less
 enable_ribbon   : yes 						# remove this line to remove the github ribbon 
 
 
