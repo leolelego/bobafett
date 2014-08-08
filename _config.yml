@@ -43,7 +43,11 @@ enable_ribbon   : yes 						# remove this line to remove the github ribbon
 ############################ Resume Content ################################
 # Your Hobbies
 #if you remove this, articles with 'hobbies' category are considerated
-hobbies: ["Pod Racer Competition", "Computer Sciences","Women","Cooking for friends"]
+hobbies: 
+- Pod Racer Competition
+- Computer Sciences
+- Women
+- Cooking for friends
 
 
 # Your Kills
