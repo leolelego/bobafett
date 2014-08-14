@@ -1,5 +1,5 @@
-_site
-
 config.codekit
-
 .codekit-cache
+_site
+_updateScript/_backup
+_updateScript/_download
