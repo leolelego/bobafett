@@ -1,5 +1,25 @@
 # -*- coding: utf-8 -*-
-import os, shutil, urllib, time, sys
+import os, shutil, urllib, time, sys,zipfile
+
+templateBranchName='Boba-Fett-Theme-For-Jekyll-gh-pages'
+folderToUpdate=["_includes","_layouts","index.html","_less/bootstrapVariables.less","_less/colors.less","_less/main.less"]
+sourcesHTTP='https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/archive/gh-pages.zip'
+
+# -----------------
+
+def copySourcesToOut(sourcesDir,outDir,fileToCopy):
+    for file in fileToCopy:
+        src=os.path.join(sourcesDir,file)
+        dst=os.path.join(outDir,file)
+        if(os.path.exists(src)):
+            if os.path.isdir(src):
+              shutil.copytree(src, dst)
+            else:
+               if not os.path.exists(os.path.dirname(dst)):
+                  os.makedirs(os.path.dirname(dst))
+               shutil.copy(src, dst)
+
+
 def reporthook(count, block_size, total_size):
     global start_time
 
@@ -18,10 +38,9 @@ def save(url, filename):
     urllib.urlretrieve(url, filename, reporthook)
 
 
-folderToUpdate=["_includes","_layouts","index.html","_less/bootstrapVariables.less","_less/colors.less","_less/main.less","_updateScript/updateFromBoba.py"]
-sourcesHTTP='https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/archive/gh-pages.zip'
 
 
+# -----------------
 def backup(workspace,workspaceScript):
     try:
 
@@ -35,36 +54,47 @@ def backup(workspace,workspaceScript):
         print "Creating backup directory"
         os.mkdir(backupDir);
 
-        for file in folderToUpdate:
-            src=os.path.join(workspace,file)
-            dst=os.path.join(backupDir,file)
-            if os.path.isdir(src):
-                shutil.copytree(src, dst)
-            else:
-                if not os.path.exists(os.path.dirname(dst)):
-                    os.makedirs(os.path.dirname(dst))
-                shutil.copy(src, dst)
-
+        copySourcesToOut(workspace,backupDir,folderToUpdate)
 
         return True
+        
     except ValueError:
             print "Oops!  Error occured :" + str(e)
             return False
 
+# -----------------
 def downloadSources(workspaceScript):
      try:
         print "--- downloading source at " + sourcesHTTP
         downloadDir=os.path.join(workspaceScript,"_download")
+        if(os.path.exists(downloadDir)):
+            shutil.rmtree(downloadDir)
         sourcesZip=os.path.join(downloadDir,"sources.zip")
         if(os.path.exists(downloadDir)):
             shutil.rmtree(downloadDir)
         os.mkdir(downloadDir);
 
         save(sourcesHTTP, sourcesZip)
+        print "--- unzip source at " + downloadDir
+        sourceZip = zipfile.ZipFile(sourcesZip)
+        sourceZip.extractall(downloadDir)
+
+        unzipPath =  os.path.join(downloadDir,templateBranchName)
+
+        return  unzipPath
 
      except ValueError:
         print "Oops!  Error occured :" + str(e)
         return False
+
+def updateFromSources(sourcesDir,outDir):
+    try:
+        print "--- updating..."
+        copySourcesToOut(sourcesDir,outDir,folderToUpdate)
+    except ValueError:
+        print "Oops!  Error occured :" + str(e)
+        return False
+# -----------------
 def main():
     # parse command line options
     workspaceScript = os.getcwd()
@@ -76,10 +106,15 @@ def main():
     if not backup(workspace,workspaceScript):
         canContinu=False
 
-    if not downloadSources(workspaceScript):
-        canContinu=False
+    sourcesDir=downloadSources(workspaceScript)
+    
+    if(sourcesDir):
+        print workspace
+        updateFromSources(sourcesDir,workspace)
 
-    print "Continu"
+
+
+    print "--- Finish !"
 
 
 if __name__ == "__main__":
