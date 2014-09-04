@@ -42,6 +42,9 @@ favicon         : /assets/bobafett.ico 		# website Favicon  / Need to be local (
 enable_ribbon   : yes 						# remove this line to remove the github ribbon 
 
 
+##### Custom category #####
+custom_category_name: Custom Category # remove to disable custom cateogry. Markdown file need to get -> categories: customs.
+custom_category_icon: bullhorn # fontawesom icon
 ############################ Resume Content ################################
 # Your Hobbies
 #if you remove this, articles with 'hobbies' category are considerated
@@ -73,9 +76,9 @@ skills:
 # Some inforamtions you want to add
 informations-custom:
 - text: Space ship drive Licence + vehicle
-  logo: space-shuttle
+  logo: space-shuttle #fontawesome
 - text: Cooking Wookie stuff
-  logo: spoon
+  logo: spoon #fontawesome
 - text: Have a lot of guns
 
 # Languages you speak (put your level in parentheses)

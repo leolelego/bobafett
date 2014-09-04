@@ -177,7 +177,7 @@ a:hover .panel-avatar {
     margin-bottom: 20px;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 730px) {
   #navbar {
     display: none;
   }

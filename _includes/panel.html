@@ -28,6 +28,10 @@
       <ul class="nav">
         {% if site.categories.experiences %}<li ><a class="scrollTo" href="#experiences">Experiences</a></li>{% endif %}
         {% if site.categories.projects %}<li><a class="scrollTo" href="#projects"> Projects</a></li>{% endif %}
+        {% if site.custom_category_name and site.categories.customs %}
+          <li><a class="scrollTo" href="#customs">{{site.custom_category_name}}</a></li>
+
+        {% endif %}
         {% if site.categories.skills or site.skills %}<li><a class="scrollTo" href="#skills">Skills</a></li>{% endif %}
         {% if site.categories.educations %}<li><a class="scrollTo" href="#educations">Education</a></li>{% endif %}
         {% if site.categories.hobbies or site.hobbies %}<li><a class="scrollTo" href="#hobbies">Hobbies</a></li>{% endif %}

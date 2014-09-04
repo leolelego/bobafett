@@ -23,18 +23,22 @@
       {% if site.categories.projects %}
         {% include content/3-projects.html %}
       {% endif %}
+      {% if site.custom_category_name and site.categories.customs %}
+        {% include content/4-customs.html %}
+      {% endif %}
+      
       {% if site.categories.skills or site.skills %}
-        {% include content/4-skills.html %}
+        {% include content/5-skills.html %}
       {% endif %}
       {% if site.categories.educations %}
-        {% include content/5-educations.html %}
+        {% include content/6-educations.html %}
       {% endif %}
       {% if site.categories.hobbies or site.hobbies %}
-        {% include content/6-hobbies.html %}
+        {% include content/7-hobbies.html %}
       {% endif %} 
        <!-- inforamtions section + bottom of content -->
-      {% include content/7-informations.html %}
-      {% include content/8-footer.html %}
+      {% include content/8-informations.html %}
+      {% include content/9-footer.html %}
       
     </body>
 
