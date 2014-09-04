@@ -1,4 +1,4 @@
-Boba Fett Theme For Jekyll
+Boba Fett Theme For Jekyll 1.1
 ==========================
 
 A **Resume Theme for [Jekyll](http://jekyllrb.com)** oriented for developpers. All the magic of this theme is that **sections fill via Markdown** files. 
@@ -73,6 +73,20 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 - Nothing scheduled.
 
 **[Contact me](mailto:contact@leoderbois.com) if you have ideas !**
+
+## Releases notes
+
+#### 1.0
+
+- First stable release
+
+#### 1.1
+
+- more fonts to custom (panel, titles, posts)
+- new **custom category** with custom name
+
+
+
 
 ## License
 
