@@ -83,6 +83,7 @@ th img {
 }
 #panel {
   color: #ffffff;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   z-index: 1000;
   height: 100%;
 }
@@ -238,7 +239,7 @@ a:hover .panel-avatar {
   display: block;
 }
 #content h2 {
-  font: 'HelveticaNeue', 'Helvetica Neue ', Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 35px;
   color: #a62a2c;
   padding: 0px;
@@ -257,6 +258,8 @@ a:hover .panel-avatar {
   font-size: 20px;
   padding: 40px;
   font-style: italic;
+  color: #b12f34;
+  font-family: Georgia, serif;
 }
 @media (max-width: 768px) {
   .content-quote {
@@ -265,9 +268,14 @@ a:hover .panel-avatar {
 }
 .content-posts {
   min-height: 200px;
+  padding: 30px;
+  margin-bottom: 10px;
+  list-style-type: none;
 }
-.content-quote span {
-  color: #b12f34;
+@media (max-width: 992px) {
+  .content-posts {
+    padding: 0px;
+  }
 }
 .content-posts i {
   color: #000000;
@@ -294,21 +302,13 @@ a:hover .panel-avatar {
   text-transform: uppercase;
   text-decoration: underline;
 }
-.content-posts {
-  padding: 30px;
-  margin-bottom: 10px;
-  list-style-type: none;
-}
-@media (max-width: 992px) {
-  .content-posts {
-    padding: 0px;
-  }
-}
 .post-content {
   font-size: 18px;
   padding: 20px;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 .post-title {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 22px;
   color: #000000;
 }
@@ -340,10 +340,8 @@ a:hover .panel-avatar {
   color: #585858;
   font-size: 14px;
 }
-@media (max-width: 768px) {
-  #informations h4 {
-    font-weight: bold;
-  }
+#informations h4 {
+  font-weight: bold;
 }
 a.content-download-button {
   margin-top: 50px;

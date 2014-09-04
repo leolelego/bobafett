@@ -56,6 +56,7 @@ td img, th img{
 }
 #panel{
 	color: @panel-text-color;
+	font-family: @font-panel;
 	height: 100%;
 	z-index: 1000;
     height: 100%;
@@ -218,7 +219,7 @@ a:hover .panel-avatar{
 	display: block;
 }
 #content h2{
-	font:@font-large ;
+	font-family: @font-content-section-title;
 	font-size: @content-section-title-size;
 	color: @content-title-text-color;
 	padding: 0px;
@@ -238,8 +239,10 @@ a:hover .panel-avatar{
 	font-weight: 300;
 	font-size: @content-quote-font-size;
 	padding : 40px;
-		font-style : italic;
-			@media(max-width: @screen-sm-min){
+	font-style: italic;
+		color: @content-quote-color;
+	font-family: @font-content-quote;
+	@media(max-width: @screen-sm-min){
 		padding: 30px;
 	}
 
@@ -247,11 +250,15 @@ a:hover .panel-avatar{
 }
 .content-posts {
 	min-height: 200px;
-}
-.content-quote span{
-	color: @content-quote-color;
+	padding: 30px;
+	margin-bottom: 10px;
+	list-style-type: none;
+	@media(max-width: @responsive-witdh){
+		padding:0px;
 
+	}
 }
+
 .content-posts i{
 	color: @content-post-icon-color;
 }
@@ -277,20 +284,14 @@ a:hover .panel-avatar{
 	text-transform: uppercase;
 	text-decoration: underline;
 }
-.content-posts{
-	padding: 30px;
-	margin-bottom: 10px;
-	list-style-type: none;
-		@media(max-width: @responsive-witdh){
-		padding:0px;
 
-	}
-}
 .post-content{
 	font-size: @content-post-text-size ;
 	padding: 20px;
+	font-family: @font-content-post;
 }
 .post-title{
+	font-family: @font-content-post-title;
 	font-size: @content-post-title-font-size;
 	color :@content-post-title-color;
 	@media(max-width: @screen-sm-min){
@@ -322,9 +323,7 @@ color: @content-post-info-color;
 	font-size: 14px;
 }
 #informations h4{
-	@media(max-width: @screen-sm-min){
 		font-weight:bold;
-	}
 }
 a.content-download-button{
 	margin-top      : 50px;
