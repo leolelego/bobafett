@@ -1,7 +1,7 @@
 # Site settings
 title      : Boba Fett's resume #title of the resume - for browser
 email      : boba@deathstar.gal # your email 
-description: # Not used
+description: "Boba Fett CV a resume theme for Jekyll" #Meta description
 baseurl    : "" # Github subfolder for project . If is your main git or you use a CNAME put ""
 url        : "http://bobafett.leoderbois.com"  # Url of your site 
 
