@@ -16,7 +16,7 @@
     {% endif %}
 
     {% if site.SEO_LOCAL %}
-    <meta property="og:locale" content="en_US">
+    <meta property="og:locale" content="{{site.SEO_LOCAL}}">
     {% endif %}
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{site.title}}">
@@ -30,7 +30,7 @@
     <meta property="og:site_name" content="{{site.title}}">
     
     {% if site.SEO_IMAGE %}
-    <meta property="og:image" content="{{site.url}}/assets/logo.png">
+    <meta property="og:image" content="{{site.url}}{{site.SEO_IMAGE}}">
     {% endif %}
 
     {% if site.SEO_ALEXA_VERIFY_ID %}
