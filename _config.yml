@@ -16,7 +16,7 @@ googleAnalyticsID:
 SEO_GOOGLEPUBLISHER: #+YourName
 SEO_LOCAL: en_US
 #SEO_Title <- title
-#SEO_DESCRIPTION  <- description
+#SEO_DESCRIPTION  <- summary
 #SEO_URL <- site.url
 #SEO_site_name <-title
 SEO_IMAGE: /assets/bobafett.jpg
