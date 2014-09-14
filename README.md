@@ -87,7 +87,7 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 
 #### 1.2
 
-- add SEO Basis option (title,local, description)
+- add Open Graph options (title,local, description)
 - add Google site verification and Alexa
 
 
