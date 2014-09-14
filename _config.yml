@@ -11,6 +11,18 @@ metadata: ["Leo Derbois","github","jekyll","jekyllrb","resume","CV","Boba Fett"]
 googleAnalyticsID: 
 #custom-css: /css/leoderbois.css # CSS with import main.less or not, to customise or override some properties
 
+
+#### SEO Informations ####
+SEO_GOOGLEPUBLISHER: #+YourName
+SEO_LOCAL: en_US
+#SEO_Title <- title
+#SEO_DESCRIPTION 
+#SEO_URL <- site.url
+#SEO_site_name <-title
+SEO_IMAGE: /assets/bobafett.jpg
+SEO_ALEXA_VERIFY_ID: 
+SEO_GOOGLE_SITE_VERIFICATION:
+
 ############################# Personnal Inforamtions ################################
 name   : Boba Fett #Your name
 summary: Intergalactic Hit Man # a simple sentence about you
