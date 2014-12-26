@@ -1,10 +1,8 @@
-@import "bootstrapVariables.less";
-@import "bobafett.less";
-@import url(http://twitter.github.com/bootstrap/assets/css/bootstrap.css);
+@import "bootstrap-variables";
 /*#######################*/
 /*#       GENERAL       #*/
 /*#######################*/
-@responsive-witdh :@screen-md-min;
+$responsive-witdh :$screen-md-min;
 
 html {
 /*
@@ -13,18 +11,18 @@ html {
 	/*overflow: hidden;*/
 }
 body {
-	background-color: @panel-filter-and-background-color;
-	font-family: @font-global;
+	background-color: $panel-filter-and-background-color;
+	font-family: $font-global;
 	height: 100%;
 	width: 100%;
 	/*position: relative;*/
 
 }
 body a{
-	color: @link-color;
+	color: $link-color;
 }
 body a:hover{
-	color: @link-color-hover;
+	color: $link-color-hover;
 	text-decoration: none;
 }
 table{
@@ -50,18 +48,18 @@ td img, th img{
 /*#######################*/
 #ribbon{
 	position: fixed; top: 0; left: 0; border: 0; z-index:9999;
-	@media(max-width: @responsive-witdh){
+	@media(max-width: $responsive-witdh){
 		position: absolute;
 	}
 }
 #panel{
-	color: @panel-text-color;
-	font-family: @font-panel;
+	color: $panel-text-color;
+	font-family: $font-panel;
 	height: 100%;
 	z-index: 1000;
     height: 100%;
 
-	@media(min-width: @responsive-witdh){
+	@media(min-width: $responsive-witdh){
 		position: fixed;
 		top: 0px;
 		left: 0px;
@@ -69,10 +67,10 @@ td img, th img{
 	}
 }
 #panel a{
-	color: @panel-link-color;
+	color: $panel-link-color;
 }
 #panel a:hover{
-	color: @panel-link-color-hover;
+	color: $panel-link-color-hover;
 }
 .panel-background-image {
 	height: 100%;
@@ -82,20 +80,20 @@ td img, th img{
 	left: 0;
 	right: 0;
 	z-index: 1;
-	-webkit-filter: blur(@panel-bg-blur);
-	-moz-filter: blur(@panel-bg-blur);
-	-o-filter: blur(@panel-bg-blur);
-	-ms-filter: blur(@panel-bg-blur);
-	filter: blur(@panel-bg-blur);	
-	opacity: @panel-bg-opacity;
-	background: url(@background-image);
+	-webkit-filter: blur($panel-bg-blur);
+	-moz-filter: blur($panel-bg-blur);
+	-o-filter: blur($panel-bg-blur);
+	-ms-filter: blur($panel-bg-blur);
+	filter: blur($panel-bg-blur);	
+	opacity: $panel-bg-opacity;
+	background: url($background-image);
 	background-size: 100% 100%;
-	@media(max-width: @responsive-witdh){
+	@media(max-width: $responsive-witdh){
 		display:none;
 	}
 }
 .panel-avatar{
-	background-image: url(@avatar-image);
+	background-image: url($avatar-image);
 	background-repeat: no-repeat;
 	background-size: 180px 180px;
 	height: 180px;
@@ -125,7 +123,7 @@ a:hover .panel-avatar{
 .panel-name{
 	text-align: center;
 	margin-top: 20px;
-	font-size: @panel-name-size;
+	font-size: $panel-name-size;
 	
 }
 .panel-social{
@@ -133,7 +131,7 @@ a:hover .panel-avatar{
 	margin: 0px;
 	width: 100%;
 	text-align: center;
-	font-size: @panel-socialicon-size;
+	font-size: $panel-socialicon-size;
 
 
 }
@@ -145,18 +143,18 @@ a:hover .panel-avatar{
 }
 .panel-summary{
 	text-align: center;
-	font-size: @panel-summary-size;
-	color :@panel-summary-color;
+	font-size: $panel-summary-size;
+	color :$panel-summary-color;
 	margin-bottom: 10px;
-	@media(max-width: @responsive-witdh){
+	@media(max-width: $responsive-witdh){
 		margin-bottom: 20px;
 	}
 }
 #navbar{
-	@media(max-height: @content-nav-height-to-remove ){
+	@media(max-height: $content-nav-height-to-remove ){
 		display:none;
 	}
-	@media(max-width: @responsive-witdh){
+	@media(max-width: $responsive-witdh){
 		display: none;
 
 	}
@@ -170,16 +168,16 @@ a:hover .panel-avatar{
 }
 #navbar  ul li{
 	list-style-type: none;
-	margin-bottom: @panel-nav-text-marginbtm-size;
+	margin-bottom: $panel-nav-text-marginbtm-size;
 	margin-top: 0px;
 	font-weight: 300;
-	font-size: @panel-nav-text-size;
+	font-size: $panel-nav-text-size;
 	padding:0 !important;
 }
 
 #navbar ul li:hover{
 	text-decoration: none;
-	font-size: @panel-nav-text-size-hover;
+	font-size: $panel-nav-text-size-hover;
 }
 #navbar .active a{
 	font-weight:bold;
@@ -191,24 +189,24 @@ a:hover .panel-avatar{
 }
 .nav>li>a:hover{
 	padding: 0px;
-	background-color: @panel-nav-color-hover;
+	background-color: $panel-nav-color-hover;
 }
 /*#######################*/
 /*#       CONTENT       #*/
 /*#######################*/
 #content{
 	padding: 20px 10px 20px 60px;
-	color: @content-text-color;
-	background-color: @content-background-color;
-	@media(max-width: @screen-sm-min){
+	color: $content-text-color;
+	background-color: $content-background-color;
+	@media(max-width: $screen-sm-min){
 		padding: 0px;
 	}
 }
 #content a{
-	color : @content-link-color;
+	color : $content-link-color;
 }
 #content a:hover{
-	color : @content-link-color-hover;
+	color : $content-link-color-hover;
 }
  section{
 	
@@ -219,9 +217,9 @@ a:hover .panel-avatar{
 	display: block;
 }
 #content h2{
-	font-family: @font-content-section-title;
-	font-size: @content-section-title-size;
-	color: @content-title-text-color;
+	font-family: $font-content-section-title;
+	font-size: $content-section-title-size;
+	color: $content-title-text-color;
 	padding: 0px;
 	padding-bottom: 10px;
 	font-style: bold;
@@ -231,18 +229,18 @@ a:hover .panel-avatar{
 
 }
 #content h2 i{
-	color: @content-title-text-color;
+	color: $content-title-text-color;
 }
 .content-quote{
 	width: 100%;
 	text-align: justify;
 	font-weight: 300;
-	font-size: @content-quote-font-size;
+	font-size: $content-quote-font-size;
 	padding : 40px;
 	font-style: italic;
-		color: @content-quote-color;
-	font-family: @font-content-quote;
-	@media(max-width: @screen-sm-min){
+		color: $content-quote-color;
+	font-family: $font-content-quote;
+	@media(max-width: $screen-sm-min){
 		padding: 30px;
 	}
 
@@ -253,14 +251,14 @@ a:hover .panel-avatar{
 	padding: 30px;
 	margin-bottom: 10px;
 	list-style-type: none;
-	@media(max-width: @responsive-witdh){
+	@media(max-width: $responsive-witdh){
 		padding:0px;
 
 	}
 }
 
 .content-posts i{
-	color: @content-post-icon-color;
+	color: $content-post-icon-color;
 }
 .content-skills {
 	padding:0;
@@ -286,17 +284,17 @@ a:hover .panel-avatar{
 }
 
 .post-content{
-	font-size: @content-post-text-size ;
+	font-size: $content-post-text-size ;
 	padding: 20px;
-	font-family: @font-content-post;
-	color: @content-post-color;
+	font-family: $font-content-post;
+	color: $content-post-color;
 
 }
 .post-title{
-	font-family: @font-content-post-title;
-	font-size: @content-post-title-font-size;
-	color :@content-post-title-color;
-	@media(max-width: @screen-sm-min){
+	font-family: $font-content-post-title;
+	font-size: $content-post-title-font-size;
+	color :$content-post-title-color;
+	@media(max-width: $screen-sm-min){
 			font-weight: bold;
 
 	}
@@ -305,20 +303,20 @@ a:hover .panel-avatar{
 }
 .content-posts  time {
 	text-align: right;
-	font-size: @content-post-info-font-size;
-	color: @content-post-info-color;
+	font-size: $content-post-info-font-size;
+	color: $content-post-info-color;
 	@media(max-width: 1200px){
 		text-align: left;
 	}
 }
 .content-posts city{
-font-size: @content-post-info-font-size;
-color: @content-post-info-color;
+font-size: $content-post-info-font-size;
+color: $content-post-info-color;
 }
 .content-list ul li{
 	list-style-type: none;
 	margin-bottom: 10px;
-	font-size:@content-post-typelist-font-size;
+	font-size:$content-post-typelist-font-size;
 }
 .content-contact-minor li {
 	color: #585858;
@@ -335,16 +333,16 @@ a.content-download-button{
 	display         : block;
 	margin-left     : auto;
 	margin-right    : auto;
-	background-color: @content-pdf-button-color;
-	color 			: @content-pdf-text-color !important;
+	background-color: $content-pdf-button-color;
+	color 			: $content-pdf-text-color !important;
 	border-radius   : 5px;
 	text-align      : center;
-	font-size       : @content-pdf-text-size;
+	font-size       : $content-pdf-text-size;
 	font-style	 	: bold !important;
 
 }
 a:hover.content-download-button{
-	background-color: @content-pdf-button-color-hover;
+	background-color: $content-pdf-button-color-hover;
 }
 
 /*#######################*/
@@ -352,12 +350,12 @@ a:hover.content-download-button{
 /*#######################*/
 footer{
 	text-align: center;
-	background-color: @footer-background-color;
-	color: @footer-text-color;
+	background-color: $footer-background-color;
+	color: $footer-text-color;
 }
 footer a{
-	color: @footer-link-color;
+	color: $footer-link-color;
 }
 footer a:hover{
-	color: @footer-link-hover-color;
+	color: $footer-link-hover-color;
 }

@@ -1,4 +1,4 @@
-Boba Fett Theme For Jekyll 1.2
+Boba Fett Theme For Jekyll 1.3
 ==========================
 
 A **Resume Theme for [Jekyll](http://jekyllrb.com)** oriented for developpers. All the magic of this theme is that **sections fill via Markdown** files. 
@@ -17,7 +17,7 @@ Desktop | Mobile
 There is three files to customize your site : 
 
 - ` _config.yml` for customizing your **informations** (name, summary, twitter, linkedin...),
-- `_less/bobafett.less` for customizing the **desgin** (fonts, colors, sizes...),
+- `css/main.scss` for customizing the **desgin** (fonts, colors, sizes...),
 - `CNAME` for your custom domain.
 
 All sections of the resume are filled with your **markdown** post in `_posts`.
@@ -32,8 +32,7 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 #### Customize
 
 - customize `_config.yml`with your informations,
-- customize `_less/bobafett.less`,
-- compile the `_less/main.less` file ([doc here](http://lesscss.org/)), *personnaly i use [Codekit on OSX](https://incident57.com/codekit/)*,
+- customize `css/main.scss` (Jekyll now support SASS)
 - or if you don't want to use `.less` change the `css/main.css`.
 
 #### Start your server
@@ -65,7 +64,7 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 
 - [Jekyll](http://jekyllrb.com) 
 - [Boostrap](http://getbootstrap.com) (included, nothing to do)
-- [less](http://lesscss.org) (Not essential but recommended)
+- [sass](http://sass-lang.com) (Included in Jekyll, nothing to do)
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/) (included, nothing to do)
 
 ## Todo
@@ -90,7 +89,9 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 - add Open Graph options (title,local, description)
 - add Google site verification and Alexa
 
+#### 1.3
 
+- change css preprocessor for SASS, which is included in Jekyll now
 
 ## License
 
