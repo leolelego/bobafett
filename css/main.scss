@@ -1,0 +1,103 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+@import "default-color"; // default color variables for bobafett theme - remove it if you don't neet
+
+
+/*################################################################################*/
+/*#       !!!!! CHANGE PARAMETER HERE TO CHANGE COLORS/FONTS etc... !!!!!        #*/
+/*################################################################################*/
+
+/*#######################*/
+/*#       GENERAL       #*/
+/*#######################*/
+
+
+
+
+/* -- >links */
+$link-color                       : $boba-red;
+$link-color-hover                 : $boba-orange;
+
+/* --> Fonts */
+$font-global                      : 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$font-panel             : $font-global;
+$font-content-quote         : Georgia, serif;
+$font-content-section-title     : $font-global;
+$font-content-post-title      : $font-global;
+$font-content-post            : $font-global;
+
+/*#######################*/
+/*#        PANEL        #*/
+/*#######################*/
+/* --> ressources */
+$avatar-image : "/assets/bobafett.jpg";  /* Need to be local (in assets forlder) */
+$background-image : "/assets/slave_one.png"; /*Need to be local (in assets forlder)*/
+/* --> Colors */
+$panel-text-color                 : white;
+$panel-summary-color              : $boba-green-light;
+
+$panel-link-color                 : $boba-orange;
+$panel-link-color-hover           : $boba-green;
+$panel-nav-color-hover        : transparent;
+
+/* --> background */
+$panel-filter-and-background-color: black;
+$panel-bg-opacity                 : 0.5;
+$panel-bg-blur                    : 5px;
+
+/* --> sizes */
+$panel-name-size                  : 32px;
+$panel-summary-size               : 24px;
+$panel-socialicon-size            : 36px;
+$panel-nav-text-size              : 30px;
+$panel-nav-text-size-hover        : $panel-nav-text-size;
+$panel-nav-text-marginbtm-size    : 8px;
+$panel-avatar-size                : 180px;
+$content-nav-height-to-remove   : 730px; // $screen-sm-min + 30 (30+/- if custom category)
+/*#######################*/
+/*#       CONTENT       #*/
+/*#######################*/
+/* --> Colors */
+$content-background-color         : white;
+$content-text-color               : black;
+
+$content-quote-color              : $boba-red-light-o;
+$content-title-text-color         : $boba-red-light;
+$content-post-title-color         : $content-text-color;
+$content-post-info-color          : #818181;
+$content-post-color         : #434343;
+$content-link-color               : $link-color;
+$content-link-color-hover         : $link-color-hover;
+$content-title-icon-color         : $content-text-color;
+$content-post-icon-color          : $content-text-color;
+$content-pdf-button-color         : black;
+$content-pdf-text-color           : white;
+$content-pdf-button-color-hover   : $boba-orange;
+
+
+/* --> sizes */
+$content-post-text-size           : 18px;
+$content-quote-font-size          : 20px;
+$content-section-title-size       : 35px;
+$content-post-title-font-size     : 22px;
+$content-post-info-font-size      : 15px;
+$content-post-typelist-font-size  : 18px; /* Post font size where is type is list (like hobbies, skills or informations)*/
+$content-pdf-text-size            : $content-post-text-size;
+
+/*#######################*/
+/*#        FOOTER       #*/
+/*#######################*/
+$footer-background-color          : black;
+$footer-text-color                : grey;
+$footer-link-color                : $link-color;
+$footer-link-hover-color          : $link-color-hover;
+
+
+
+// Don't remove, it's all layouts !
+@import "bobafett-layout";
+

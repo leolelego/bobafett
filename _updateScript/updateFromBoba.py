@@ -2,7 +2,7 @@
 import os, shutil, urllib, time, sys,zipfile
 
 templateBranchName='Boba-Fett-Theme-For-Jekyll-gh-pages'
-folderToUpdate=["_includes","_layouts","index.html","_less/bootstrapVariables.less","_less/colors.less","_less/main.less"]
+folderToUpdate=["_includes","_layouts","index.html","_sass"]
 sourcesHTTP='https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/archive/gh-pages.zip'
 
 # -----------------
