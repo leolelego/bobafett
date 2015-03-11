@@ -8,7 +8,8 @@ url        : "http://bobafett.leoderbois.com"  # Url of your site
 
 metadata: ["Leo Derbois","github","jekyll","jekyllrb","resume","CV","Boba Fett"] # Metadata for 
 # If you want to analyse your site  with google analytics (code like UA-5293-1)
-googleAnalyticsID: UA-54776487-1
+googleAnalyticsID: #UA-54776XXXX-XXX
+ackeeAnalytics: http://pmpa.ovh:8893/!
 #custom-css: /css/leoderbois.css # CSS with import main.less or not, to customise or override some properties
 
 
