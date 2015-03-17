@@ -1,4 +1,4 @@
-Boba Fett Theme For Jekyll 1.3
+Boba Fett Theme For Jekyll 1.4
 ==========================
 
 A **Resume Theme for [Jekyll](http://jekyllrb.com)** oriented for developpers. All the magic of this theme is that **sections fill via Markdown** files. 
@@ -46,10 +46,12 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 
 ## Exemples of site using this template
 
-- [Boba Fett Resume](http://bobafett.leoderbois.com)
-- [Léo Derbois resume](http://www.leoderbois.com)
+- [Boba Fett himself](http://bobafett.leoderbois.com)
+- [Léo Derbois ](http://www.leoderbois.com)
+- [Jeremy Rekier](http://www.jrekier-blog.net/site_CV/index.html)
+- [Geoffrey BERGERET](http://www.gbergeret.org)
 
-> [tell me](mailto:contact@leoderbois.com) if you use my theme 😊 
+> [Tell me](mailto:contact@leoderbois.com) if you use my theme 😊 
 
 
 ## Development
@@ -75,6 +77,7 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 
 ## Releases notes
 
+
 #### 1.0
 
 - First stable release
@@ -92,6 +95,17 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 #### 1.3
 
 - change css preprocessor for SASS, which is included in Jekyll now
+
+#### 1.4
+- support of VCard by clicking on avatar (Thanks to Geoffrey BERGERET)
+- support of [Ackee analytics](https://github.com/electerious/Ackee) (self hosted solution)
+- date on bottom is updated automatically
+
+## Thanks
+
+- [Nicolas Derbois](http://www.derbois-nicolas.name) (HTML5 and CSS3 help)
+- [Matthieu Rebuffat](http://art-of-kiko.fr) (Design suggestions)
+- [Geoffrey BERGERET](http://www.gbergeret.org) (VCard support idea)
 
 ## License
 
