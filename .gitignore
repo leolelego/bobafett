@@ -3,7 +3,7 @@ _site
 .sass-cache
 
 # Templates infos
-_sass/_custom.scss
 _config.yml
+_sass/_custom.scss
 _posts
 assets/*
