@@ -29,7 +29,7 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 
 You can run this command on terminal : 
 
-` scipt `
+`bash <(curl -s https://raw.githubusercontent.com/leoderbois/Boba-Fett-Theme-For-Jekyll/master/_docs/install.sh)`
 
 and now you can run a jekyll server on this folder.
 
