@@ -1,21 +1,14 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@charset "utf-8";
 
 
-@import "default-color"; // default color variables for bobafett theme - remove it if you don't need
-@import "defaults"; // If some ressources miss, look at this file, perhaps new ressources exist.
+/*##########################################################################################*/
+/*#       All ressources an properties can be modified. Modify them on css/main.scss       #*/
+/*##########################################################################################*/
 
-/*################################################################################*/
-/*#       !!!!! CHANGE PARAMETER HERE TO CHANGE COLORS/FONTS etc... !!!!!        #*/
-/*################################################################################*/
+
 
 /*#######################*/
 /*#       GENERAL       #*/
 /*#######################*/
-
-
 
 
 /* -- >links */
@@ -95,11 +88,3 @@ $footer-background-color          : black;
 $footer-text-color                : grey;
 $footer-link-color                : $link-color;
 $footer-link-hover-color          : $link-color-hover;
-
-
-
-// Don't remove, it's all layouts !
-@import "bobafett-layout", // Default theme CSS
-        "custom" // override default CSS
-        ;
-

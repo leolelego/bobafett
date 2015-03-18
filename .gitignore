@@ -7,3 +7,4 @@ _config.yml
 _sass/_custom.scss
 _posts
 assets/*
+css/main.scss
