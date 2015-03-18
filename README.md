@@ -7,7 +7,7 @@ A **Resume Theme for [Jekyll](http://jekyllrb.com)** oriented for developpers. A
 
 Desktop | Mobile
 -------|--------
-![screen](docs/browser-demo.png)| ![screen](docs/mobile-demo.png)
+![screen](_docs/browser-demo.png)| ![screen](_docs/mobile-demo.png)
 
 
 ## How to use it
@@ -25,12 +25,18 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
  
 ### Quick start
 
-#### get it :
+#### install :
+
+You can run this command on terminal : 
+
+` scipt `
+
+or do it manually :
 
 - Clone the master branch : `git clone https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll.git`
-- move `_configDemo.yml` to `_config.yml` and customize it
+- move `_configDemo.yml` to `_config.yml` and customize it : `cd Boba-Fett-Theme-For-Jekyll;  mv _configDemo.yml _config.yml`
+- add a `_posts` folder for your CV informations.
 - add `assets`folder if you need
-- add posts in function of your CV.
 
 **To update your project from the original, just make a `git pull`. All customizable files are ignored on push on my Master branch. So this will only update layout but not informations.**
 
