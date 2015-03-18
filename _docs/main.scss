@@ -7,6 +7,7 @@
 @import "default-color"; // default color variables for bobafett theme - remove it if you don't need
 @import "defaults"; // If some ressources miss, look at this file, perhaps new ressources exist.
 
+
 /*################################################################################*/
 /*#       !!!!! CHANGE PARAMETER HERE TO CHANGE COLORS/FONTS etc... !!!!!        #*/
 /*################################################################################*/
@@ -19,7 +20,7 @@
 
 
 /* -- >links */
-$link-color                       : blue;
+$link-color                       : $boba-red;
 $link-color-hover                 : $boba-orange;
 
 /* --> Fonts */
@@ -37,7 +38,7 @@ $font-content-post            : $font-global;
 $avatar-image : "/assets/bobafett.jpg";  /* Need to be local (in assets forlder) */
 $background-image : "/assets/slave_one.png"; /*Need to be local (in assets forlder)*/
 /* --> Colors */
-$panel-text-color                 : red;
+$panel-text-color                 : white;
 $panel-summary-color              : $boba-green-light;
 
 $panel-link-color                 : $boba-orange;
@@ -95,7 +96,6 @@ $footer-background-color          : black;
 $footer-text-color                : grey;
 $footer-link-color                : $link-color;
 $footer-link-hover-color          : $link-color-hover;
-
 
 
 // Don't remove, it's all layouts !
