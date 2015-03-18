@@ -32,7 +32,7 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 - add `assets`folder if you need
 - add posts in function of your CV.
 
-** To update your project from the original, just make a `git pull`. All customizable files are ignored on push on my Master branch. So this will only update layout but not informations.
+** To update your project from the original, just make a `git pull`. All customizable files are ignored on push on my Master branch. So this will only update layout but not informations.**
 
 #### Customize
 
