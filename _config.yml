@@ -6,7 +6,7 @@ baseurl    : "" # Github subfolder for project . If is your main git or you use 
 url        : "http://bobafett.leoderbois.com"  # Url of your site 
 
 
-metadata: ["Leo Derbois","github","jekyll","jekyllrb","resume","CV","Boba Fett"] # Metadata for 
+metadata: ["Leo Derbois","github","jekyll","jekyllrb","resume","CV","Boba Fett","Boba"] # Metadata for 
 # If you want to analyse your site  with google analytics (code like UA-5293-1)
 googleAnalyticsID: #UA-54776XXXX-XXX
 ackeeAnalytics: http://pmpa.ovh:8893/!
