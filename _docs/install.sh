@@ -10,6 +10,7 @@ mv _configDemo.yml _config.yml
 mkdir assets
 
 cp -r _docs/_demoposts _posts
+rm -rf assets
 cp -r _docs/assetsdemo assets
 
 mv CNAMEDEMO CNAME
