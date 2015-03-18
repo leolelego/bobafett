@@ -7,7 +7,7 @@ A **Resume Theme for [Jekyll](http://jekyllrb.com)** oriented for developpers. A
 
 Desktop | Mobile
 -------|--------
-![screen](assets/browser-demo.png)| ![screen](assets/mobile-demo.png)
+![screen](docs/browser-demo.png)| ![screen](docs/mobile-demo.png)
 
 
 ## How to use it
@@ -18,6 +18,7 @@ There is three files to customize your site :
 
 - ` _config.yml` for customizing your **informations** (name, summary, twitter, linkedin...),
 - `css/main.scss` for customizing the **desgin** (fonts, colors, sizes...),
+- `_sass/_custom.scss`for override default CSS properties.
 - `CNAME` for your custom domain.
 
 All sections of the resume are filled with your **markdown** post in `_posts`.
@@ -26,14 +27,18 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 
 #### get it :
 
-- download **[sources file](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/archive/gh-pages.zip)** or **[clone](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/fork)**, customize it and run Jekyll on your server,
-- [**fork the gh-pages branch**](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/fork) to a new project of your github (best choice). And *Pull* it on your computer.
+- Clone the master branch : `git clone https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll.git`
+- move `_configDemo.yml` to `_config.yml` and customize it
+- add `assets`folder if you need
+- add posts in function of your CV.
+
+** To update your project from the original, just make a `git pull`. All customizable files are ignored on push on my Master branch. So this will only update layout but not informations.
 
 #### Customize
 
 - customize `_config.yml`with your informations,
 - customize `css/main.scss` (Jekyll now support SASS)
-- or if you don't want to use `.less` change the `css/main.css`.
+- or if you don't want to use `.scss` change the `css/main.scss`.
 
 #### Start your server
 
@@ -58,8 +63,8 @@ All sections of the resume are filled with your **markdown** post in `_posts`.
 
 #### There is 2 statics branches :
 
+- `master` for `clone`or `fork`,
 - `gh-pages` for the [demo](http://bobafett.leoderbois.com), [to download](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/archive/gh-pages.zip) and [to fork](https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll/fork),
-- `develop` for improvements and fixes,
 
 
 #### This project use **Frameworks** : 
