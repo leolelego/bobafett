@@ -31,6 +31,8 @@ You can run this command on terminal :
 
 ` scipt `
 
+and now you can run a jekyll server on this folder.
+
 or do it manually :
 
 - Clone the master branch : `git clone https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll.git`

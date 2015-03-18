@@ -1,4 +1,4 @@
-
+#!/bin/bash
 # Download
 git clone https://github.com/leoderbois/Boba-Fett-Theme-For-Jekyll.git
 
