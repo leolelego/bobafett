@@ -1,6 +1,9 @@
-config.codekit
-.codekit-cache
+# defaults Jekyll
 _site
-_updateScript/_backup
-_updateScript/_download
 .sass-cache
+
+# Templates infos
+_sass/_custom.scss
+_config.yml
+_posts
+assets/*
