@@ -4,4 +4,3 @@ _site
 _updateScript/_backup
 _updateScript/_download
 .sass-cache
-_posts/*
