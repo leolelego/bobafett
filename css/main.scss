@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 
-@import "default-color"; // default color variables for bobafett theme - remove it if you don't neet
+@import "default-color"; // default color variables for bobafett theme - remove it if you don't need
 
 
 /*################################################################################*/
@@ -99,5 +99,7 @@ $footer-link-hover-color          : $link-color-hover;
 
 
 // Don't remove, it's all layouts !
-@import "bobafett-layout";
+@import "bobafett-layout", // Default theme CSS
+        "custom" // override default CSS
+        ;
 
