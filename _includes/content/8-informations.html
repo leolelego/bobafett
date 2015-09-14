@@ -1,7 +1,7 @@
   <section id="informations" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  >
   <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><i class="fa fa-info"></i> Informations</h2>
 
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content-posts  
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content-posts
 content-list">
 	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
 	<h4>Contacts</h4>
@@ -16,7 +16,7 @@ content-list">
 
     </ul>
     </div>
-    
+
     <div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
     <h4>Social Networking</h4>
     <ul >
@@ -24,10 +24,12 @@ content-list">
       {% if site.google %}<li><a href="https://plus.google.com/+{{site.google}}" target="_blank"><i class="fa fa-google-plus"></i> {{site.name}}</a></li>{% endif %}
       {% if site.github %}<li><a href="https://github.com/{{site.github}}" target="_blank"><i class="fa fa-github" ></i> {{site.github}}</a></li>{% endif %}
       {% if site.twitter %}<li><a href="http://www.twitter.com/{{site.twitter}}" target="_blank"><i class="fa fa-twitter"></i> @{{site.twitter}}</a></li>{% endif %}
+      {% if site.stackoverflow %}<li><a href="http://stackoverflow.com/users/{{site.stackoverflow}}" target="_blank"><i class="fa fa-stack-overflow"></i> ID: {{site.stackoverflow}}</a></li>{% endif %}
       {% if site.facebook %}<li><a href="https://www.facebook.com/{{site.facebok}}" target="_blank"><i class="fa fa-facebook"></i> {{site.facebook}}</a></li>{% endif %}
+      {% if site.elloco %}<li><a href="https://ello.co/{{site.elloco}}" target="_blank"><i class="fa fa-smile-o"></i> ello.co/{{site.elloco}}</a></li>{% endif %}
     </ul>
     </div>
-    
+
     {% if site.informations-custom and site.speaking-langugages %}
     <div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
     <h4>Others</h4>

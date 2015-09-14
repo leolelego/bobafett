@@ -1,12 +1,12 @@
 # Site settings
 title      : Boba Fett's resume #title of the resume - for browser
-email      : boba@deathstar.gal # your email 
+email      : boba@deathstar.gal # your email
 description: # Not used
 baseurl    : "" # Github subfolder for project . If is your main git or you use a CNAME put ""
-url        : "http://bobafett.leoderbois.com"  # Url of your site 
+url        : "http://bobafett.leoderbois.com"  # Url of your site
 
 
-metadata: ["Leo Derbois","github","jekyll","jekyllrb","resume","CV","Boba Fett","Boba"] # Metadata for 
+metadata: ["Leo Derbois","github","jekyll","jekyllrb","resume","CV","Boba Fett","Boba"] # Metadata for
 # If you want to analyse your site  with google analytics (code like UA-5293-1)
 googleAnalyticsID: #UA-54776XXXX-XXX
 ackeeAnalytics: http://pmpa.ovh:8893/!
@@ -21,7 +21,7 @@ SEO_LOCAL: en_US
 #SEO_URL <- site.url
 #SEO_site_name <-title
 SEO_IMAGE: /assets/bobafett.jpg
-SEO_ALEXA_VERIFY_ID: 
+SEO_ALEXA_VERIFY_ID:
 SEO_GOOGLE_SITE_VERIFICATION:
 
 ############################# Personnal Inforamtions ################################
@@ -29,15 +29,15 @@ name   : Boba Fett #Your name
 summary: Intergalactic Hit Man # a simple sentence about you
 quote  : "killing and kidnaping people is all my life. My father selected me because I was the best of a million of sons. I was made and educated to kill, kidnap and guard your body like nobody can do !" # a quote about you
 phone  : +33 06 71 82 84 56 # your phone number
-vcard  : /assets/leoderbois.vcf 
+vcard  : /assets/leoderbois.vcf
 # Where you leave ?
 street : 45 Wookies street
-city   : Kamino			
-zipcode: 45002				
+city   : Kamino
+zipcode: 45002
 
 
 # if you have a site or a custom blog
-blog_name: Boba Fett At School 
+blog_name: Boba Fett At School
 blog_url : http://www.osxbricks.com
 
 # your social informations
@@ -46,13 +46,14 @@ google  : bobafett # google username
 github  : bobafett # github username
 twitter : bobafett # twitter username
 facebook: bobafett # facebook username
-
+elloco:   bobafett # elloco username
+stackoverflow: bobafett # stackoverflow ID
 
 ############################# Site Options ################################
 favicon         : /assets/bobafett.ico 		# website Favicon  / Need to be local (in assets forlder)
 #avatar          : NOW IN BOBAFETT.less
 #panel_background: NOW IN BOBAFETT.less
-enable_ribbon   : yes 						# remove this line to remove the github ribbon 
+enable_ribbon   : yes 						# remove this line to remove the github ribbon
 
 
 ##### Custom category #####
@@ -61,7 +62,7 @@ custom_category_icon: bullhorn # fontawesom icon
 ############################ Resume Content ################################
 # Your Hobbies
 #if you remove this, articles with 'hobbies' category are considerated
-hobbies: 
+hobbies:
 - Pod Racer Competition
 - Computer Sciences
 - Women
@@ -97,7 +98,7 @@ informations-custom:
 # Languages you speak (put your level in parentheses)
 speaking-langugages: ["Mandalorian (native)","Huttese (professionnal)","Wookie (bases)"]
 
-# a link to your PDF version of the remuse. If you remove, the button will disappear. 
+# a link to your PDF version of the remuse. If you remove, the button will disappear.
 resume_pdf: http://cl.ly/3c3a3F2v0a0v/download/boba_fett.pdf
 
 
