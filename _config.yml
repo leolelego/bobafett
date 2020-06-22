@@ -2,7 +2,7 @@
 title      : Boba Fett's resume #title of the resume - for browser
 email      : boba@deathstar.gal # your email
 description: # Not used
-baseurl    : "" # Github subfolder for project . If is your main git or you use a CNAME put ""
+baseurl    : "http://leolelego.github.io/bobafett/" # Github subfolder for project . If is your main git or you use a CNAME put ""
 url        : "http://leolelego.github.io/bobafett/"  # Url of your site
 
 
