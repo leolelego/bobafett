@@ -1,0 +1,56 @@
+
+<!-- 
+Please, keep the template name on your forked site. That's can help me in my futur to find job :) 
+-->
+
+<footer class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+	  © {{ site.time | date: '%Y' }} {{ site.name }}. Based on a <a href="https://github.com/leolelego/Boba-Fett-Theme-For-Jekyll" target="_blank">Boba Fett theme</a>.
+</footer>
+
+<!-- JQuery -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<!-- animate scroll -->
+<script type="text/javascript">
+	$("#navbar ul li a[href^='#']").on('click', function(e) {
+
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(this.hash).offset().top
+     }, 300, function(){
+
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
+
+});
+</script>
+ 
+<!--<script type="text/javascript">$('#content').scrollspy({ target: '#navbar' })</script>-->
+{% if site.googleAnalyticsID %}
+<!-- Google Analytics -->
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '{{site.googleAnalyticsID}}', 'auto');
+      ga('send', 'pageview');
+
+</script>
+{% endif %}
+
+{% if site.ackeeAnalytics %}
+<!--  Ackee Analytics -->
+<script async data-ackee type='text/javascript' src='{{site.ackeeAnalytics}}'></script>
+{% endif %}

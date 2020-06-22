@@ -1,0 +1,59 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="description" content="{{site.description}}" />
+    <meta name="keywords" content="{{site.metadata | join: ','}}" />
+
+    <title>{{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- SEO -->
+    {% if site.SEO_GOOGLE_PUBLISHER %}
+    <link rel="publisher" href="https://plus.google.com/{{site.SEO_GOOGLE_PUBLISHER}}">
+    {% endif %}
+
+    {% if site.SEO_LOCAL %}
+    <meta property="og:locale" content="{{site.SEO_LOCAL}}">
+    {% endif %}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{site.title}}">
+
+    {% if site.summary %}
+    <meta property="og:description" content="{{site.summary}}">
+    {% endif %}
+
+
+    <meta property="og:url" content="{{site.url}}">
+    <meta property="og:site_name" content="{{site.title}}">
+    
+    {% if site.SEO_IMAGE %}
+    <meta property="og:image" content="{{site.url}}{{site.SEO_IMAGE}}">
+    {% endif %}
+
+    {% if site.SEO_ALEXA_VERIFY_ID %}
+    <meta name="alexaVerifyID" content="P0o240iLC9cMMIPP_j7zc64PURI">
+    {% endif %}
+
+
+    {% if site.SEO_GOOGLE_SITE_VERIFICATION %}
+    <meta name="google-site-verification" content="RRHbbWZS2ouxnM2JcJsWLVFN1Am0TBHMi7ZEYIqXAnE">
+    {% endif %}
+
+    <!-- /SEO -->
+
+
+    <link href="{{ site.url }}{{ site.favicon }}" rel="shortcut icon" type="image/x-icon">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    {% include bobafett-head.html %}
+    {% if site.custom-css %}
+    <link rel="stylesheet" href="{{ "{{site.custom-css}}" | prepend: site.baseurl }}">
+    {% else %}
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    {% endif %}
+</head>
